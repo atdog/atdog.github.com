@@ -12,6 +12,8 @@ categories: "Life"
 
 怎麼說呢? 
 
+<br>
+
 ---
 
 <br>
@@ -30,6 +32,8 @@ categories: "Life"
 
 因為[4哥][dm4]教我的
 
+<br>
+
 ---
 
 <br>
@@ -43,6 +47,12 @@ categories: "Life"
 懂麻？
 
 因為[4哥][dm4]教我的
+
+<br>
+
+---
+
+<br>
 
 可能有人想知道
 
