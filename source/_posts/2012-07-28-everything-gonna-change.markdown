@@ -1,9 +1,9 @@
-layout: post
 ---
+layout: post
 date: 2012-07-28 01:15
 title: "什麼都不一樣了"
 comments: true
-categories: 
+categories: "Life"
 ---
 
 我是說
