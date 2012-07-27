@@ -12,7 +12,11 @@ categories: "Life"
 
 怎麼說呢? 
 
+<br>
+
 ---
+
+<br>
 
     $ perl -e '$data="dm4,xman,atdog";print join ",", split //,"?"x(scalar split /,/, $data);'
 
@@ -28,7 +32,11 @@ categories: "Life"
 
 因為[4哥][dm4]教我的
 
+<br>
+
 ---
+
+<br>
 
     perl -e 'use v5.10;say "dm4 is one of my favorite singers"'
 
@@ -40,7 +48,11 @@ categories: "Life"
 
 因為[4哥][dm4]教我的
 
+<br>
+
 ---
+
+<br>
 
 可能有人想知道
 
