@@ -3,7 +3,7 @@ layout: post
 title: "The Future"
 date: 2012-11-04 10:15
 comments: true
-categories: 生活
+categories: Life
 ---
 
 <p>只為了賺更多錢，而想出國；</p>
