@@ -50,35 +50,15 @@ categories: Security
 
 所以選擇先放棄所有binary的題目，把其他web、android、misc解玩再說，
 
-比賽前出題者就先說了，這次比賽第一題給大家15分鐘，
+題目和解題方式我想在網路上很容易可以找到
 
-15分鐘過後就不能再使用社群網路，
+所以就不多說囉...
 
-好啦比賽開始...
+最後的成績 Team 430 - 第三名
 
----
+第一名不意外是Orange他們
 
-第一題：請加入金盾獎gsa.icst fb好友，然後就會有Key
-
-打開 http://www.facebook.com/gsa.icst 後可以看到
-
-![1.1][p1.1]
-![1.2][p1.2]
-
-然後，比賽開始一分鐘內我們傳了阿，就是不加我們好友，還猜會不會是要好友的好友才能加入，
-
-所以傳隊名跟學校給所有金盾獎的好友、並加入好友，但都沒人要加= =...
-
-結果15分鐘過了，還是不加我好友...
-
-結果就在頒獎的時候加我...完全的不懂
-
-![1.3][p1.3]
-
----
-
-第二題：
-
+感謝[dm4][dm4's blog] XD
 
 [rank]: http://4.bp.blogspot.com/-Z6PAlz1rH6I/UNUwYUhVCoI/AAAAAAAAAWw/uygzrMAG_8c/s1600/R0021755.JPG
 [mcm]: /images/McDownalds.jpg "McDownalds"
