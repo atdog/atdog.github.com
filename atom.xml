@@ -4,7 +4,7 @@
   <title><![CDATA[atdog's Blog]]></title>
   <link href="http://atdog.github.com/atom.xml" rel="self"/>
   <link href="http://atdog.github.com/"/>
-  <updated>2013-02-27T13:07:16+08:00</updated>
+  <updated>2013-02-27T15:10:26+08:00</updated>
   <id>http://atdog.github.com/</id>
   <author>
     <name><![CDATA[atdog]]></name>
@@ -140,6 +140,17 @@
 <p>第一名不意外是Orange他們</p>
 
 <p>感謝<a href="http://blog.dm4.tw">dm4</a> XD</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[sql injection]]></title>
+    <link href="http://atdog.github.com/blog/2012/12/27/sql-injection/"/>
+    <updated>2012-12-27T15:05:00+08:00</updated>
+    <id>http://atdog.github.com/blog/2012/12/27/sql-injection</id>
+    <content type="html"><![CDATA[<p>There is the slide about sql injection that I presented with <a href="http://blog.dm4.tw">dm4</a> at the yahoo office.</p>
+
+<p><a href="https://www.dropbox.com/s/w1zyzkhofnzqfzh/sql-pure.pdf">SQL injection cheatsheet</a></p>
 ]]></content>
   </entry>
   
