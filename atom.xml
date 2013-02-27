@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[atdog's Blog]]></title>
+  <link href="http://atdog.github.com/atom.xml" rel="self"/>
+  <link href="http://atdog.github.com/"/>
+  <updated>2013-02-27T12:27:14+08:00</updated>
+  <id>http://atdog.github.com/</id>
+  <author>
+    <name><![CDATA[atdog]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[第七屆資安技能金盾獎-心得文]]></title>
+    <link href="http://atdog.github.com/blog/2013/01/02/di-qi-jie-zi-an-ji-neng-jin-dun-jiang-xin-de-wen/"/>
+    <updated>2013-01-02T13:22:00+08:00</updated>
+    <id>http://atdog.github.com/blog/2013/01/02/di-qi-jie-zi-an-ji-neng-jin-dun-jiang-xin-de-wen</id>
+    <content type="html"><![CDATA[<p>金盾獎</p>
+
+<p>對於剛加入資安領域的同學應該不陌生吧？</p>
+
+<p>免費的麥當勞吃到飽，</p>
+
+<p><img src="http://atdog.github.com/images/McDownalds.jpg" title="McDownalds" alt="麥當勞山" /></p>
+
+<p>出賽的抽獎獎品，</p>
+
+<p>曾經的燦坤禮卷，</p>
+
+<p>到這屆的Sogo禮卷，</p>
+
+<p>欸，最重要的是不收報名費、還送參加獎！</p>
+
+<p>也很感謝資策會對資訊安全的注重，才能給我們這樣子的舞台。</p>
+
+<hr />
+
+<p>到2012年已經是<a href="http://is.w18.noonspace.tw/">第七屆</a>了，</p>
+
+<p>想想也參加了四屆倒是第一次Po心得文，</p>
+
+<p>從最一開始的戰友 <a href="http://www.plurk.com/Jeffoo">Jeffxx</a>，到今年的戰友 <a href="http://blog.dm4.tw">dm4</a></p>
+
+<p>只能說我的戰友們太給力 XD~</p>
+
+<p>初賽部分就不多說了，大家上網應該都可以找到一些相關的考題內容，</p>
+
+<p>結束前30分鐘排名&#8230;</p>
+
+<p><img src="http://4.bp.blogspot.com/-Z6PAlz1rH6I/UNUwYUhVCoI/AAAAAAAAAWw/uygzrMAG_8c/s1600/R0021755.JPG" alt="rank" /></p>
+
+<hr />
+
+<p>這次的複賽依舊在恆逸資訊教育訓練中心，</p>
+
+<p>五台電腦，一台輸入Key、三台看題目、一台提供對外網路</p>
+
+<p>我們的策略很簡單，因為其中一位隊員出國了，</p>
+
+<p>所以選擇先放棄所有binary的題目，把其他web、android、misc解玩再說，</p>
+
+<p>題目和解題方式我想在網路上很容易可以找到</p>
+
+<p>所以就不多說囉&#8230;</p>
+
+<p>最後的成績 Team 430 - 第三名</p>
+
+<p>第一名不意外是Orange他們</p>
+
+<p>感謝<a href="http://blog.dm4.tw">dm4</a> XD</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Android apps - Exploit poc]]></title>
+    <link href="http://atdog.github.com/blog/2012/11/26/android-apps-exploit-poc/"/>
+    <updated>2012-11-26T02:43:00+08:00</updated>
+    <id>http://atdog.github.com/blog/2012/11/26/android-apps-exploit-poc</id>
+    <content type="html"><![CDATA[<p>Google play - <a href="https://play.google.com/store/apps/details?id=com.texty.sms">MightyText</a></p>
+
+<p>Exploit - poc</p>
+
+<p>Malicious app can use this vulnerabililty to escape permission, it only need to request permissions READ_SMS and WRITE_SMS for gaining more privileges.</p>
+
+<p>Watch the video below!</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/AbFuaKFJVyE" frameborder="0" allowfullscreen></iframe>
+
+
+<hr />
+
+<br>
+
+
+<p>then we found that another app <a href="https://play.google.com/store/apps/details?id=com.samsung.swift.app.kiesair">Kies Air</a> also had this vulnerabililty.</p>
+
+<br>
+
+
+<p>watch the video below</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/ikVj8O99xWY" frameborder="0" allowfullscreen></iframe>
+
+
+<p>we can only use the permission READ_CONTACT and WRITE_CONTACT to escape permission. And we found that Kies Air requested lots of permissions (see below) when it was installed.These permissions could let the malware totally control your smartphone.</p>
+
+<pre><code>&lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /&gt;
+&lt;uses-permission android:name="android.permission.BROADCAST_STICKY" /&gt;
+&lt;uses-permission android:name="android.permission.CALL_PHONE" /&gt;
+&lt;uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /&gt;
+&lt;uses-permission android:name="android.permission.GET_ACCOUNTS" /&gt;
+&lt;uses-permission android:name="android.permission.INTERNET" /&gt;
+&lt;uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /&gt;
+&lt;uses-permission android:name="android.permission.MODIFY_PHONE_STATE" /&gt;
+&lt;uses-permission android:name="android.permission.READ_CALENDAR" /&gt;
+&lt;uses-permission android:name="android.permission.READ_CONTACTS" /&gt;
+&lt;uses-permission android:name="android.permission.READ_PHONE_STATE" /&gt;
+&lt;uses-permission android:name="android.permission.READ_SMS" /&gt;
+&lt;uses-permission android:name="android.permission.READ_TASKS" /&gt;
+&lt;uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /&gt;
+&lt;uses-permission android:name="android.permission.RECEIVE_SMS" /&gt;
+&lt;uses-permission android:name="android.permission.SEND_SMS" /&gt;
+&lt;uses-permission android:name="android.permission.SET_WALLPAPER" /&gt;
+&lt;uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" /&gt;
+&lt;uses-permission android:name="android.permission.VIBRATE" /&gt;
+&lt;uses-permission android:name="android.permission.WAKE_LOCK" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_CALENDAR" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_CONTACTS" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_SETTINGS" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_SMS" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_TASKS" /&gt;
+&lt;uses-permission android:name="android.permission.READ_CALL_LOG" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_CALL_LOG" /&gt; 
+</code></pre>
+
+<hr />
+
+<br></br>
+
+
+<p>Bonus video - SMS Message Eavesdropping</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/fxDmhErQxwk" frameborder="0" allowfullscreen></iframe>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Future]]></title>
+    <link href="http://atdog.github.com/blog/2012/11/04/the-future/"/>
+    <updated>2012-11-04T10:15:00+08:00</updated>
+    <id>http://atdog.github.com/blog/2012/11/04/the-future</id>
+    <content type="html"><![CDATA[<p>只為了賺更多錢，而想出國；</p>
+
+
+<p>只為了賺更多錢，而念研究所；</p>
+
+
+<p>只為了賺更多錢，而選擇替代役。</p>
+
+
+<p>而我的夢想呢？</p>
+
+<br>
+
+
+<p>看到朋友正為了自己的未來而努力，</p>
+
+<br>
+
+
+<p>我卻好像因為找不到對未來衝刺的勇氣而感到無助。</p>
+
+<br>
+
+
+<p>回台北短短的二年內，台北的生活讓我把自己的耐心與努力磨光了，</p>
+
+<br>
+
+
+<p>面對這失望的社會體制，</p>
+
+<br>
+
+
+<p>取而代之的是，對這社會制度影響下而扭曲的人們感到作嘔。</p>
+
+<br>
+
+
+<p>不過，若沒有真正去體驗，怎麼能看清這一切呢？</p>
+
+<br>
+
+
+<hr />
+
+<br>
+
+
+<p><a href="http://xman.tw">龍哥</a>，恭喜能去德國，在你夢想中的舞台發展，</p>
+
+<br>
+
+
+<p>像你說的，你一定能夠繼續影響這個世界。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[什麼都不一樣了]]></title>
+    <link href="http://atdog.github.com/blog/2012/07/28/everything-gonna-change/"/>
+    <updated>2012-07-28T01:15:00+08:00</updated>
+    <id>http://atdog.github.com/blog/2012/07/28/everything-gonna-change</id>
+    <content type="html"><![CDATA[<p>我是說</p>
+
+<p>認識<a href="http://blog.dm4.tw">dm4</a>之後</p>
+
+<p>怎麼說呢?</p>
+
+<br>
+
+
+<hr />
+
+<br>
+
+
+<pre><code>$ perl -e '$data="dm4,xman,atdog";print join ",", split //,"?"x(scalar split /,/, $data);'
+</code></pre>
+
+<p>大家知道這樣的結果麻？</p>
+
+<pre><code>?,?,?
+</code></pre>
+
+<p>幹，我真的很廢耶</p>
+
+<p>我想這是大家看到結果所想到的</p>
+
+<p>為什麼我會呢？</p>
+
+<p>因為<a href="http://blog.dm4.tw">4哥</a>教我的</p>
+
+<br>
+
+
+<hr />
+
+<br>
+
+
+<pre><code>perl -e 'use v5.10;say "dm4 is one of my favorite singers"'
+</code></pre>
+
+<p>這個大家知道麻？</p>
+
+<pre><code>dm4 is one of my favorite singers
+</code></pre>
+
+<p>懂麻？</p>
+
+<p>因為<a href="http://blog.dm4.tw">4哥</a>教我的</p>
+
+<br>
+
+
+<hr />
+
+<br>
+
+
+<p>可能有人想知道</p>
+
+<p>為什麼要一直貼<a href="http://blog.dm4.tw">4哥</a>的Blog呢？</p>
+
+<p>因為今年HITCON他有參加</p>
+
+<p><a href="http://blog.dm4.tw">http://blog.dm4.tw</a></p>
+]]></content>
+  </entry>
+  
+</feed>

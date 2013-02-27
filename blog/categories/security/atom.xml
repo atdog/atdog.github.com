@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Security | atdog's Blog]]></title>
+  <link href="http://atdog.github.com/blog/categories/security/atom.xml" rel="self"/>
+  <link href="http://atdog.github.com/"/>
+  <updated>2013-02-27T12:27:14+08:00</updated>
+  <id>http://atdog.github.com/</id>
+  <author>
+    <name><![CDATA[atdog]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[第七屆資安技能金盾獎-心得文]]></title>
+    <link href="http://atdog.github.com/blog/2013/01/02/di-qi-jie-zi-an-ji-neng-jin-dun-jiang-xin-de-wen/"/>
+    <updated>2013-01-02T13:22:00+08:00</updated>
+    <id>http://atdog.github.com/blog/2013/01/02/di-qi-jie-zi-an-ji-neng-jin-dun-jiang-xin-de-wen</id>
+    <content type="html"><![CDATA[<p>金盾獎</p>
+
+<p>對於剛加入資安領域的同學應該不陌生吧？</p>
+
+<p>免費的麥當勞吃到飽，</p>
+
+<p><img src="/images/McDownalds.jpg" title="McDownalds" alt="麥當勞山" /></p>
+
+<p>出賽的抽獎獎品，</p>
+
+<p>曾經的燦坤禮卷，</p>
+
+<p>到這屆的Sogo禮卷，</p>
+
+<p>欸，最重要的是不收報名費、還送參加獎！</p>
+
+<p>也很感謝資策會對資訊安全的注重，才能給我們這樣子的舞台。</p>
+
+<hr />
+
+<p>到2012年已經是<a href="http://is.w18.noonspace.tw/">第七屆</a>了，</p>
+
+<p>想想也參加了四屆倒是第一次Po心得文，</p>
+
+<p>從最一開始的戰友 <a href="http://www.plurk.com/Jeffoo">Jeffxx</a>，到今年的戰友 <a href="http://blog.dm4.tw">dm4</a></p>
+
+<p>只能說我的戰友們太給力 XD~</p>
+
+<p>初賽部分就不多說了，大家上網應該都可以找到一些相關的考題內容，</p>
+
+<p>結束前30分鐘排名...</p>
+
+<p><img src="http://4.bp.blogspot.com/-Z6PAlz1rH6I/UNUwYUhVCoI/AAAAAAAAAWw/uygzrMAG_8c/s1600/R0021755.JPG" alt="rank" /></p>
+
+<hr />
+
+<p>這次的複賽依舊在恆逸資訊教育訓練中心，</p>
+
+<p>五台電腦，一台輸入Key、三台看題目、一台提供對外網路</p>
+
+<p>我們的策略很簡單，因為其中一位隊員出國了，</p>
+
+<p>所以選擇先放棄所有binary的題目，把其他web、android、misc解玩再說，</p>
+
+<p>題目和解題方式我想在網路上很容易可以找到</p>
+
+<p>所以就不多說囉...</p>
+
+<p>最後的成績 Team 430 - 第三名</p>
+
+<p>第一名不意外是Orange他們</p>
+
+<p>感謝<a href="http://blog.dm4.tw">dm4</a> XD</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Android apps - Exploit poc]]></title>
+    <link href="http://atdog.github.com/blog/2012/11/26/android-apps-exploit-poc/"/>
+    <updated>2012-11-26T02:43:00+08:00</updated>
+    <id>http://atdog.github.com/blog/2012/11/26/android-apps-exploit-poc</id>
+    <content type="html"><![CDATA[<p>Google play - <a href="https://play.google.com/store/apps/details?id=com.texty.sms">MightyText</a></p>
+
+<p>Exploit - poc</p>
+
+<p>Malicious app can use this vulnerabililty to escape permission, it only need to request permissions READ_SMS and WRITE_SMS for gaining more privileges.</p>
+
+<p>Watch the video below!</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/AbFuaKFJVyE" frameborder="0" allowfullscreen></iframe>
+
+
+<hr />
+
+<br>
+
+
+<p>then we found that another app <a href="https://play.google.com/store/apps/details?id=com.samsung.swift.app.kiesair">Kies Air</a> also had this vulnerabililty.</p>
+
+<br>
+
+
+<p>watch the video below</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/ikVj8O99xWY" frameborder="0" allowfullscreen></iframe>
+
+
+<p>we can only use the permission READ_CONTACT and WRITE_CONTACT to escape permission. And we found that Kies Air requested lots of permissions (see below) when it was installed.These permissions could let the malware totally control your smartphone.</p>
+
+<pre><code>&lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /&gt;
+&lt;uses-permission android:name="android.permission.BROADCAST_STICKY" /&gt;
+&lt;uses-permission android:name="android.permission.CALL_PHONE" /&gt;
+&lt;uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /&gt;
+&lt;uses-permission android:name="android.permission.GET_ACCOUNTS" /&gt;
+&lt;uses-permission android:name="android.permission.INTERNET" /&gt;
+&lt;uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /&gt;
+&lt;uses-permission android:name="android.permission.MODIFY_PHONE_STATE" /&gt;
+&lt;uses-permission android:name="android.permission.READ_CALENDAR" /&gt;
+&lt;uses-permission android:name="android.permission.READ_CONTACTS" /&gt;
+&lt;uses-permission android:name="android.permission.READ_PHONE_STATE" /&gt;
+&lt;uses-permission android:name="android.permission.READ_SMS" /&gt;
+&lt;uses-permission android:name="android.permission.READ_TASKS" /&gt;
+&lt;uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /&gt;
+&lt;uses-permission android:name="android.permission.RECEIVE_SMS" /&gt;
+&lt;uses-permission android:name="android.permission.SEND_SMS" /&gt;
+&lt;uses-permission android:name="android.permission.SET_WALLPAPER" /&gt;
+&lt;uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" /&gt;
+&lt;uses-permission android:name="android.permission.VIBRATE" /&gt;
+&lt;uses-permission android:name="android.permission.WAKE_LOCK" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_CALENDAR" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_CONTACTS" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_SETTINGS" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_SMS" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_TASKS" /&gt;
+&lt;uses-permission android:name="android.permission.READ_CALL_LOG" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_CALL_LOG" /&gt; 
+</code></pre>
+
+<hr />
+
+<br></br>
+
+
+<p>Bonus video - SMS Message Eavesdropping</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/fxDmhErQxwk" frameborder="0" allowfullscreen></iframe>
+
+
+
+]]></content>
+  </entry>
+  
+</feed>

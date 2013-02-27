@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://atdog.github.com/blog/2012/07/28/everything-gonna-change/</loc>
+        <lastmod>2013-02-27T11:17:02+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://atdog.github.com/blog/2012/11/04/the-future/</loc>
+        <lastmod>2013-02-27T11:17:02+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://atdog.github.com/blog/2012/11/26/android-apps-exploit-poc/</loc>
+        <lastmod>2013-02-27T11:17:02+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://atdog.github.com/blog/2013/01/02/di-qi-jie-zi-an-ji-neng-jin-dun-jiang-xin-de-wen/
+        </loc>
+        <lastmod>2013-02-27T11:17:02+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://atdog.github.com/blog/archives/</loc>
+        <lastmod>2013-02-27T11:17:02+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://atdog.github.com/</loc>
+        <lastmod>2013-02-27T11:17:02+08:00</lastmod>
+    </url>
+</urlset>
