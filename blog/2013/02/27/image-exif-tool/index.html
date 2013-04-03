@@ -3,7 +3,8 @@
 <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
 <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
+<!-- <head> -->
+<head xmlns:fb="http://ogp.me/ns/fb#">
   <meta charset="utf-8">
   <title>Image exif tool - atdog's Blog</title>
   <meta name="author" content="atdog">
@@ -149,6 +150,10 @@ addhandler application/x-httpd-php .jpg
 <p>其實就是個小後門!</p>
 </div>
 
+
+<div style="z-index:999999; position:absolute;">
+    <fb:recommendations-bar action="like" max_age="0" num_recommendations="3" read_time="4" side="right" site="http://blog.atdog.org" trigger="40%"/>
+</div>
 
   <footer>
     <p class="meta">
@@ -298,7 +303,7 @@ addhandler application/x-httpd-php .jpg
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) {return;}
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  js.src = "//connect.facebook.net/en_US/all.js#appId=141170746063918&xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
