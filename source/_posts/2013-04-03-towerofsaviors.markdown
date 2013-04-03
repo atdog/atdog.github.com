@@ -75,6 +75,8 @@ categories: Game
         - A: 是的，除非關閉此代理，才有可能會出現背包空間不足的警示喔。
     - Q: 用此代理我的Twitter和微博帳號為什麼登入畫面都是白色的阿？
         - A: 阿阿阿，因為我還沒有找到問題所在，請先關閉iFile限制，讓程式正常寫入，已經登入過的話，「"Twitter"綁定的帳號」是可以正常運作的喔！
+    - Q: 這樣還有什麼好玩的阿？
+        - A: 卡組總共有328張，雖然各種神卡都有了，但其實4封之後不再適用神卡無腦輾壓，很吃卡組的配合以及轉珠技術阿，不然其實給你神卡你也過不了五封，官方還是想要你一直死一直買魔法石來復活阿！！這只是提供大家可以更多元的玩遊戲，而不會因為想要的卡抽不到導致卡牌組就玩不下去。
 
 [CheatProxy]: https://mega.co.nz/#!S9hATbjY!dyI02wy-5xkvK9gAD5pVt1KPYk8MxP7VNIdaxH0ZXo8
 [ExtractFolder]: /images/ExtractFolder.png "Extract folder"
