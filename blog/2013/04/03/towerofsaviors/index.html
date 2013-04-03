@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>第七屆資安技能金盾獎-心得文 - atdog's Blog</title>
+  <title>TowerOfSaviors - atdog's Blog</title>
   <meta name="author" content="atdog">
 
   
-  <meta name="description" content="金盾獎 對於剛加入資安領域的同學應該不陌生吧？ 免費的麥當勞吃到飽， 出賽的抽獎獎品， 曾經的燦坤禮卷， 到這屆的Sogo禮卷， 欸，最重要的是不收報名費、還送參加獎！ 也很感謝資策會對資訊安全的注重，才能給我們這樣子的舞台。 到2012年已經是第七屆了， 想想也參加了四屆倒是第一次Po心得文， &hellip;">
+  <meta name="description" content="教學文捏 請先下載：CheatProxy 下載解壓縮之後，將會有如下圖 請先確定JAVA已正確安裝，.jar 檔並不會被解壓縮 請依序執行、設定，如下圖 執行 burpsuite.jar，並如下設定 切換至Proxy選項 設定 &#8220;Intercept is off&#8221; &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://atdog.github.com/blog/2013/01/02/di-qi-jie-zi-an-ji-neng-jin-dun-jiang-xin-de-wen/">
+  <link rel="canonical" href="http://atdog.github.com/blog/2013/04/03/towerofsaviors/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -80,7 +80,7 @@
   
   <header>
     
-      <h1 class="entry-title">第七屆資安技能金盾獎-心得文</h1>
+      <h1 class="entry-title">TowerOfSaviors</h1>
     
     
       <p class="meta">
@@ -96,7 +96,7 @@
   
 
 
-<time datetime="2013-01-02T13:22:00+08:00" pubdate data-updated="true">Jan 2<span>nd</span>, 2013</time>
+<time datetime="2013-04-03T14:42:00+08:00" pubdate data-updated="true">Apr 3<span>rd</span>, 2013</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -105,59 +105,106 @@
   </header>
 
 
-<div class="entry-content"><p>金盾獎</p>
+<div class="entry-content"><p>教學文捏</p>
 
-<p>對於剛加入資安領域的同學應該不陌生吧？</p>
+<p>請先下載：<a href="https://mega.co.nz/#!S9hATbjY!dyI02wy-5xkvK9gAD5pVt1KPYk8MxP7VNIdaxH0ZXo8">CheatProxy</a></p>
 
-<p>免費的麥當勞吃到飽，</p>
+<p>下載解壓縮之後，將會有如下圖
+<img src="images/ExtractFolder.png" title="Extract folder" alt="ExtractFolder" /></p>
 
-<p><img src="/images/McDownalds.jpg" title="McDownalds" alt="麥當勞山" /></p>
+<p>請先確定JAVA已正確安裝，.jar 檔並<code>不會</code>被解壓縮</p>
 
-<p>出賽的抽獎獎品，</p>
+<p>請依序執行、設定，如下圖</p>
 
-<p>曾經的燦坤禮卷，</p>
+<ol>
+<li><p>執行 burpsuite.jar，並如下設定
+ <br>  <br/>
+ 切換至Proxy選項
+ <img src="images/bp1.png" title="bp" alt="bp1" />
+ <br>  <br/>
+ 設定 &#8220;Intercept is off&#8221;
+ <img src="images/bp2.png" title="bp" alt="bp2" />
+ <br>  <br/>
+ 切換至Options選項
+ <img src="images/bp3.png" title="bp" alt="bp3" />
+ <br>  <br/>
+ 設定 &#8220;Running&#8221; 為勾選
+ <img src="images/bp4.png" title="bp" alt="bp4" />
+ <img src="images/bp5.png" title="bp" alt="bp5" /></p></li>
+<li><p>執行 tower.jar
+ <br>  <br/>
+ 點選Start
+ <br>  <br/>
+ <img src="images/tw1.png" title="tw" alt="tw1" />
+ <br>  <br/>
+ 記住紅色框框，IP以及local port
+ <br>  <br/>
+ <img src="images/tw2.png" title="tw" alt="tw2" /></p></li>
+<li><p>設定 HTTP proxy (此以iphone 為例)
+ <br>
+ 點選設定，Wifi
+ <br>
+ <img src="images/ip1.png" title="ip" alt="ip1" />
+ <br>
+ 點選最右邊小箭頭，進行代理伺服器設定
+ <br>
+ <img src="images/ip2.png" title="ip" alt="ip2" />
+ <br>
+ 將前面步驟所記錄的IP以及local port填上
+ <br>
+ <img src="images/ip3.png" title="ip" alt="ip3" /></p></li>
+<li><p>重啓 神魔之塔
+ <br>
+ <img src="images/g1.png" title="g" alt="g1" /></p></li>
+<li><p>FAQ</p>
 
-<p>到這屆的Sogo禮卷，</p>
+<ul>
+<li>Q: 用此代理我可以修改卡片嘛？
 
-<p>欸，最重要的是不收報名費、還送參加獎！</p>
+<ul>
+<li>A: 使用此代理並不會真正擁有卡片，當代理關閉時，卡片會回復成原有的樣子喔。</li>
+</ul>
+</li>
+<li>Q: &#8220;Loot&#8221; 是用來顯示什麼的？
 
-<p>也很感謝資策會對資訊安全的注重，才能給我們這樣子的舞台。</p>
+<ul>
+<li>A: &#8220;Loot&#8221; 會顯示進入關卡時會掉落的卡片，若想刷卡沒有自己要的卡片就可以關掉重開囉！</li>
+</ul>
+</li>
+<li>Q: 可以讓多個人同時使用代理嘛?
 
-<hr />
+<ul>
+<li>A: 代理可同時多人登入，但僅限區網內。</li>
+</ul>
+</li>
+<li>Q: 多人使用會不會有什麼問題？
 
-<p>到2012年已經是<a href="http://is.w18.noonspace.tw/">第七屆</a>了，</p>
+<ul>
+<li>A: 多人登入唯有&#8221;Loot&#8221; 記錄會被洗掉，一旦有使用者開啟關卡進行戰鬥，&#8221;Loot&#8221; 欄位就會清空重新顯示。</li>
+</ul>
+</li>
+<li>Q: 為什麼戰鬥結束後，獲得的卡片都不見了，背包一直都是一樣的卡片呢?
 
-<p>想想也參加了四屆倒是第一次Po心得文，</p>
+<ul>
+<li>A: 利用此代理的牌組進行戰鬥，所獲得的卡片、金錢、經驗、點數會儲存下來，但除非關閉代理否則獲得的卡片暫時不會顯示。</li>
+</ul>
+</li>
+<li>Q: 所以背包空間不會影響遊戲進行囉？
 
-<p>從最一開始的戰友 <a href="http://www.plurk.com/Jeffoo">Jeffxx</a>，到今年的戰友 <a href="http://blog.dm4.tw">dm4</a></p>
+<ul>
+<li>A: 是的，除非關閉此代理，才有可能會出現背包空間不足的警示喔。</li>
+</ul>
+</li>
+<li>Q: 用此代理我的Twitter和微博帳號為什麼登入畫面都是白色的阿？
 
-<p>只能說我的戰友們太給力 XD~</p>
+<ul>
+<li>A: 阿阿阿，因為我還沒有找到問題所在，請先關閉iFile限制，讓程式正常寫入，已經登入過的話，「&#8221;Twitter&#8221;綁定的帳號」是可以正常運作的喔！</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
 
-<p>初賽部分就不多說了，大家上網應該都可以找到一些相關的考題內容，</p>
-
-<p>結束前30分鐘排名&#8230;</p>
-
-<p><img src="http://4.bp.blogspot.com/-Z6PAlz1rH6I/UNUwYUhVCoI/AAAAAAAAAWw/uygzrMAG_8c/s1600/R0021755.JPG" alt="rank" /></p>
-
-<hr />
-
-<p>這次的複賽依舊在恆逸資訊教育訓練中心，</p>
-
-<p>五台電腦，一台輸入Key、三台看題目、一台提供對外網路</p>
-
-<p>我們的策略很簡單，因為其中一位隊員出國了，</p>
-
-<p>所以選擇先放棄所有binary的題目，把其他web、android、misc解玩再說，</p>
-
-<p>題目和解題方式我想在網路上很容易可以找到</p>
-
-<p>所以就不多說囉&#8230;</p>
-
-<p>最後的成績 Team 430 - 第三名</p>
-
-<p>第一名不意外是Orange他們</p>
-
-<p>感謝<a href="http://blog.dm4.tw">dm4</a> XD</p>
 </div>
 
 
@@ -180,12 +227,12 @@
   
 
 
-<time datetime="2013-01-02T13:22:00+08:00" pubdate data-updated="true">Jan 2<span>nd</span>, 2013</time>
+<time datetime="2013-04-03T14:42:00+08:00" pubdate data-updated="true">Apr 3<span>rd</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/security/'>Security</a>
+    <a class='category' href='/blog/categories/game/'>Game</a>
   
 </span>
 
@@ -194,7 +241,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://atdog.github.com/blog/2013/01/02/di-qi-jie-zi-an-ji-neng-jin-dun-jiang-xin-de-wen/" data-via="h4ck47" data-counturl="http://atdog.github.com/blog/2013/01/02/di-qi-jie-zi-an-ji-neng-jin-dun-jiang-xin-de-wen/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://atdog.github.com/blog/2013/04/03/towerofsaviors/" data-via="h4ck47" data-counturl="http://atdog.github.com/blog/2013/04/03/towerofsaviors/" >Tweet</a>
   
   
   
@@ -205,10 +252,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/12/27/sql-injection/" title="Previous Post: sql injection">&laquo; sql injection</a>
+        <a class="basic-alignment left" href="/blog/2013/02/27/image-exif-tool/" title="Previous Post: Image exif tool">&laquo; Image exif tool</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/02/27/wix-dot-com/" title="Next Post: Wix.com">Wix.com &raquo;</a>
       
     </p>
   </footer>
@@ -291,8 +336,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://atdog.github.com/blog/2013/01/02/di-qi-jie-zi-an-ji-neng-jin-dun-jiang-xin-de-wen/';
-        var disqus_url = 'http://atdog.github.com/blog/2013/01/02/di-qi-jie-zi-an-ji-neng-jin-dun-jiang-xin-de-wen/';
+        var disqus_identifier = 'http://atdog.github.com/blog/2013/04/03/towerofsaviors/';
+        var disqus_url = 'http://atdog.github.com/blog/2013/04/03/towerofsaviors/';
         var disqus_script = 'embed.js';
       
     (function () {

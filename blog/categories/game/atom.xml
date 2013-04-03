@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Game | atdog's Blog]]></title>
+  <link href="http://atdog.github.com/blog/categories/game/atom.xml" rel="self"/>
+  <link href="http://atdog.github.com/"/>
+  <updated>2013-04-03T15:36:52+08:00</updated>
+  <id>http://atdog.github.com/</id>
+  <author>
+    <name><![CDATA[atdog]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[TowerOfSaviors]]></title>
+    <link href="http://atdog.github.com/blog/2013/04/03/towerofsaviors/"/>
+    <updated>2013-04-03T14:42:00+08:00</updated>
+    <id>http://atdog.github.com/blog/2013/04/03/towerofsaviors</id>
+    <content type="html"><![CDATA[<p>教學文捏</p>
+
+<p>請先下載：<a href="https://mega.co.nz/#!S9hATbjY!dyI02wy-5xkvK9gAD5pVt1KPYk8MxP7VNIdaxH0ZXo8">CheatProxy</a></p>
+
+<p>下載解壓縮之後，將會有如下圖
+<img src="images/ExtractFolder.png" title="Extract folder" alt="ExtractFolder" /></p>
+
+<p>請先確定JAVA已正確安裝，.jar 檔並<code>不會</code>被解壓縮</p>
+
+<p>請依序執行、設定，如下圖</p>
+
+<ol>
+<li><p>執行 burpsuite.jar，並如下設定
+ <br>  <br/>
+ 切換至Proxy選項
+ <img src="images/bp1.png" title="bp" alt="bp1" />
+ <br>  <br/>
+ 設定 "Intercept is off"
+ <img src="images/bp2.png" title="bp" alt="bp2" />
+ <br>  <br/>
+ 切換至Options選項
+ <img src="images/bp3.png" title="bp" alt="bp3" />
+ <br>  <br/>
+ 設定 "Running" 為勾選
+ <img src="images/bp4.png" title="bp" alt="bp4" />
+ <img src="images/bp5.png" title="bp" alt="bp5" /></p></li>
+<li><p>執行 tower.jar
+ <br>  <br/>
+ 點選Start
+ <br>  <br/>
+ <img src="images/tw1.png" title="tw" alt="tw1" />
+ <br>  <br/>
+ 記住紅色框框，IP以及local port
+ <br>  <br/>
+ <img src="images/tw2.png" title="tw" alt="tw2" /></p></li>
+<li><p>設定 HTTP proxy (此以iphone 為例)
+ <br>
+ 點選設定，Wifi
+ <br>
+ <img src="images/ip1.png" title="ip" alt="ip1" />
+ <br>
+ 點選最右邊小箭頭，進行代理伺服器設定
+ <br>
+ <img src="images/ip2.png" title="ip" alt="ip2" />
+ <br>
+ 將前面步驟所記錄的IP以及local port填上
+ <br>
+ <img src="images/ip3.png" title="ip" alt="ip3" /></p></li>
+<li><p>重啓 神魔之塔
+ <br>
+ <img src="images/g1.png" title="g" alt="g1" /></p></li>
+<li><p>FAQ</p>
+
+<ul>
+<li>Q: 用此代理我可以修改卡片嘛？
+
+<ul>
+<li>A: 使用此代理並不會真正擁有卡片，當代理關閉時，卡片會回復成原有的樣子喔。</li>
+</ul>
+</li>
+<li>Q: "Loot" 是用來顯示什麼的？
+
+<ul>
+<li>A: "Loot" 會顯示進入關卡時會掉落的卡片，若想刷卡沒有自己要的卡片就可以關掉重開囉！</li>
+</ul>
+</li>
+<li>Q: 可以讓多個人同時使用代理嘛?
+
+<ul>
+<li>A: 代理可同時多人登入，但僅限區網內。</li>
+</ul>
+</li>
+<li>Q: 多人使用會不會有什麼問題？
+
+<ul>
+<li>A: 多人登入唯有"Loot" 記錄會被洗掉，一旦有使用者開啟關卡進行戰鬥，"Loot" 欄位就會清空重新顯示。</li>
+</ul>
+</li>
+<li>Q: 為什麼戰鬥結束後，獲得的卡片都不見了，背包一直都是一樣的卡片呢?
+
+<ul>
+<li>A: 利用此代理的牌組進行戰鬥，所獲得的卡片、金錢、經驗、點數會儲存下來，但除非關閉代理否則獲得的卡片暫時不會顯示。</li>
+</ul>
+</li>
+<li>Q: 所以背包空間不會影響遊戲進行囉？
+
+<ul>
+<li>A: 是的，除非關閉此代理，才有可能會出現背包空間不足的警示喔。</li>
+</ul>
+</li>
+<li>Q: 用此代理我的Twitter和微博帳號為什麼登入畫面都是白色的阿？
+
+<ul>
+<li>A: 阿阿阿，因為我還沒有找到問題所在，請先關閉iFile限制，讓程式正常寫入，已經登入過的話，「"Twitter"綁定的帳號」是可以正常運作的喔！</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>
