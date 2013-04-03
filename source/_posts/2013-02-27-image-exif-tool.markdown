@@ -47,6 +47,6 @@ categories: Security
 
 [exiftool]: http://www.sno.phy.queensu.ca/~phil/exiftool/
 [o-talk]: http://www.slideshare.net/p8361/webconf-2013best-practices-the-upload
-[imageup1]: images/imageup1.png "image upload"
-[imageup2]: images/imageup2.png "image upload"
+[imageup1]: /images/imageup1.png "image upload"
+[imageup2]: /images/imageup2.png "image upload"
 [orange]: http://blog.orange.tw
