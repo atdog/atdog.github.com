@@ -4,7 +4,7 @@
   <title><![CDATA[atdog's Blog]]></title>
   <link href="http://atdog.github.com/atom.xml" rel="self"/>
   <link href="http://atdog.github.com/"/>
-  <updated>2013-04-03T15:37:50+08:00</updated>
+  <updated>2013-04-03T15:41:37+08:00</updated>
   <id>http://atdog.github.com/</id>
   <author>
     <name><![CDATA[atdog]]></name>
@@ -23,7 +23,7 @@
 <p>請先下載：<a href="https://mega.co.nz/#!S9hATbjY!dyI02wy-5xkvK9gAD5pVt1KPYk8MxP7VNIdaxH0ZXo8">CheatProxy</a></p>
 
 <p>下載解壓縮之後，將會有如下圖
-<img src="images/ExtractFolder.png" title="Extract folder" alt="ExtractFolder" /></p>
+<img src="http://atdog.github.com/images/ExtractFolder.png" title="Extract folder" alt="ExtractFolder" /></p>
 
 <p>請先確定JAVA已正確安裝，.jar 檔並<code>不會</code>被解壓縮</p>
 
@@ -33,42 +33,42 @@
 <li><p>執行 burpsuite.jar，並如下設定
  <br>  <br/>
  切換至Proxy選項
- <img src="images/bp1.png" title="bp" alt="bp1" />
+ <img src="http://atdog.github.com/images/bp1.png" title="bp" alt="bp1" />
  <br>  <br/>
  設定 &#8220;Intercept is off&#8221;
- <img src="images/bp2.png" title="bp" alt="bp2" />
+ <img src="http://atdog.github.com/images/bp2.png" title="bp" alt="bp2" />
  <br>  <br/>
  切換至Options選項
- <img src="images/bp3.png" title="bp" alt="bp3" />
+ <img src="http://atdog.github.com/images/bp3.png" title="bp" alt="bp3" />
  <br>  <br/>
  設定 &#8220;Running&#8221; 為勾選
- <img src="images/bp4.png" title="bp" alt="bp4" />
- <img src="images/bp5.png" title="bp" alt="bp5" /></p></li>
+ <img src="http://atdog.github.com/images/bp4.png" title="bp" alt="bp4" />
+ <img src="http://atdog.github.com/images/bp5.png" title="bp" alt="bp5" /></p></li>
 <li><p>執行 tower.jar
  <br>  <br/>
  點選Start
  <br>  <br/>
- <img src="images/tw1.png" title="tw" alt="tw1" />
+ <img src="http://atdog.github.com/images/tw1.png" title="tw" alt="tw1" />
  <br>  <br/>
  記住紅色框框，IP以及local port
  <br>  <br/>
- <img src="images/tw2.png" title="tw" alt="tw2" /></p></li>
+ <img src="http://atdog.github.com/images/tw2.png" title="tw" alt="tw2" /></p></li>
 <li><p>設定 HTTP proxy (此以iphone 為例)
  <br>
  點選設定，Wifi
  <br>
- <img src="images/ip1.png" title="ip" alt="ip1" />
+ <img src="http://atdog.github.com/images/ip1.png" title="ip" alt="ip1" />
  <br>
  點選最右邊小箭頭，進行代理伺服器設定
  <br>
- <img src="images/ip2.png" title="ip" alt="ip2" />
+ <img src="http://atdog.github.com/images/ip2.png" title="ip" alt="ip2" />
  <br>
  將前面步驟所記錄的IP以及local port填上
  <br>
- <img src="images/ip3.png" title="ip" alt="ip3" /></p></li>
+ <img src="http://atdog.github.com/images/ip3.png" title="ip" alt="ip3" /></p></li>
 <li><p>重啓 神魔之塔
  <br>
- <img src="images/g1.png" title="g" alt="g1" /></p></li>
+ <img src="http://atdog.github.com/images/g1.png" title="g" alt="g1" /></p></li>
 <li><p>FAQ</p>
 
 <ul>
