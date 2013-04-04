@@ -4,7 +4,7 @@
   <title><![CDATA[atdog's Blog]]></title>
   <link href="http://atdog.github.com/atom.xml" rel="self"/>
   <link href="http://atdog.github.com/"/>
-  <updated>2013-04-04T14:43:07+08:00</updated>
+  <updated>2013-04-04T14:48:21+08:00</updated>
   <id>http://atdog.github.com/</id>
   <author>
     <name><![CDATA[atdog]]></name>
@@ -122,6 +122,7 @@ or
 
 <ul>
 <li>A: 有有有，我最近加上功能了，有個&#8221;Change Card&#8221;的勾選框，打勾就會換成328張卡片，不打勾就會按照自己原本的牌組囉，不過我還幫大家自動改掉背包、隊伍空間，所以至少過程中是不用困擾隊伍怎麼分配，也不用花魔法石買空間啦！</li>
+<li>A: 提供另外一個方案，可以下載Lite版本，裡面只有顯示掉落卡片的功能，並不會修改任何資料(背包、隊伍空間、卡片)喔！</li>
 </ul>
 </li>
 <li>Q: 這樣還有什麼好玩的阿？
