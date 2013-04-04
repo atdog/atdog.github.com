@@ -8,7 +8,11 @@ categories: Game
 
 教學文捏
 
-請先下載：[CheatProxy][CheatProxy]
+請先下載：
+
+[CheatProxy][CheatProxy](完整功能)
+or
+[CheatProxyLite][CheatProxyLite](僅提供檢視關卡掉落卡片功能)
 
 下載解壓縮之後，將會有如下圖
 ![ExtractFolder][ExtractFolder]
@@ -81,6 +85,7 @@ categories: Game
         - A: 卡組總共有328張，雖然各種神卡都有了，但其實4封之後不再適用神卡無腦輾壓，很吃卡組的配合以及轉珠技術阿，不然其實給你神卡你也過不了五封，官方還是想要你一直死一直買魔法石來復活阿！！這只是提供大家可以更多元的玩遊戲，而不會因為想要的卡抽不到導致卡牌組就玩不下去。
 
 [CheatProxy]: https://mega.co.nz/#!nlZk0J5b!cAjNXhlrEeRW6Az1uK9DbS1zc8JhtXptN1Kp_-Mvf_g
+[CheatProxyLite]: https://mega.co.nz/#!3pYykIAS!EFmI7C73rtNOW4UlAGZ9_QzdPVdrCphGQgcy6Q9Rx1w
 [ExtractFolder]: /images/ExtractFolder.png "Extract folder"
 [bp1]: /images/bp1.png "bp"
 [bp2]: /images/bp2.png "bp"
