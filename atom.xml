@@ -4,7 +4,7 @@
   <title><![CDATA[atdog's Blog]]></title>
   <link href="http://atdog.github.com/atom.xml" rel="self"/>
   <link href="http://atdog.github.com/"/>
-  <updated>2013-04-04T22:12:09+08:00</updated>
+  <updated>2013-04-05T05:50:40+08:00</updated>
   <id>http://atdog.github.com/</id>
   <author>
     <name><![CDATA[atdog]]></name>
@@ -18,7 +18,9 @@
     <link href="http://atdog.github.com/blog/2013/04/03/towerofsaviors/"/>
     <updated>2013-04-03T14:42:00+08:00</updated>
     <id>http://atdog.github.com/blog/2013/04/03/towerofsaviors</id>
-    <content type="html"><![CDATA[<p>教學文捏</p>
+    <content type="html"><![CDATA[<p>神魔之塔外掛</p>
+
+<p>教學文捏</p>
 
 <p>請先下載：</p>
 
