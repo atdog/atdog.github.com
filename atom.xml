@@ -4,7 +4,7 @@
   <title><![CDATA[atdog's Blog]]></title>
   <link href="http://atdog.github.com/atom.xml" rel="self"/>
   <link href="http://atdog.github.com/"/>
-  <updated>2013-04-04T14:58:46+08:00</updated>
+  <updated>2013-04-04T22:12:09+08:00</updated>
   <id>http://atdog.github.com/</id>
   <author>
     <name><![CDATA[atdog]]></name>
@@ -542,8 +542,6 @@ addhandler application/x-httpd-php .jpg
 <p>這次HIT拿到Wargame冠軍，</p>
 
 <p>特別感謝 <a href="http://blog.dm4.tw">4哥</a>、<a href="http://www.plurk.com/Jeffoo">Jeffxx</a></p>
-
-<p><a href="http://blog.dm4.tw">http://blog.dm4.tw</a></p>
 ]]></content>
   </entry>
   
