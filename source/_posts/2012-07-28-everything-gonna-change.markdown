@@ -60,6 +60,10 @@ categories: Life
 
 因為今年HITCON他有參加
 
-[http://blog.dm4.tw][dm4]
+這次HIT拿到Wargame冠軍，
 
+特別感謝 [4哥][dm4]、[Jeffxx][jeffxx's plurk]
+
+
+[jeffxx's plurk]: http://www.plurk.com/Jeffoo
 [dm4]: http://blog.dm4.tw
