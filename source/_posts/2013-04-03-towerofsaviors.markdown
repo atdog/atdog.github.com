@@ -48,7 +48,9 @@ or
     <br>    
     ![tw2][tw2]
 
-3. 設定 HTTP proxy (此以iphone 為例)
+3. 設定 HTTP proxy 
+    <br>
+    iPhone
     <br>
     點選設定，Wifi
     <br>
@@ -61,6 +63,30 @@ or
     將前面步驟所記錄的IP以及local port填上
     <br>
     ![ip3][ip3]
+    <br>
+    Android
+    <br>
+    點選設定，Wifi
+    <br>
+    ![ss1][ss1]
+    <br>
+    長案已連接的Wifi
+    <br>
+    ![ss2][ss2]
+    <br>
+    點選更改網路設定
+    <br>
+    ![ss3][ss3]
+    <br>
+    勾選顯示進階設定
+    <br>
+    ![ss4][ss4]
+    <br>
+    將代理伺服器調成手動
+    將前面步驟所記錄的IP以及local port填上
+    <br>
+    ![ss5][ss5]
+    <br>
 
 4. 重啓 神魔之塔
     <br>
@@ -101,3 +127,8 @@ or
 [ip2]: /images/ip2.png "ip"
 [ip3]: /images/ip3.png "ip"
 [g1]: /images/g1.png "g"
+[ss1]: /images/ss1.png "ss"
+[ss2]: /images/ss2.png "ss"
+[ss3]: /images/ss3.png "ss"
+[ss4]: /images/ss4.png "ss"
+[ss5]: /images/ss5.png "ss"
