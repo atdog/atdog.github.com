@@ -87,7 +87,7 @@ or
     - Q: 這樣還有什麼好玩的阿？
         - A: 卡組總共有328張，雖然各種神卡都有了，但其實4封之後不再適用神卡無腦輾壓，很吃卡組的配合以及轉珠技術阿，不然其實給你神卡你也過不了五封，官方還是想要你一直死一直買魔法石來復活阿！！這只是提供大家可以更多元的玩遊戲，而不會因為想要的卡抽不到導致卡牌組就玩不下去。
 
-[CheatProxy]: https://mega.co.nz/#!nlZk0J5b!cAjNXhlrEeRW6Az1uK9DbS1zc8JhtXptN1Kp_-Mvf_g
+[CheatProxy]: https://mega.co.nz/#!j1RR2TJB!RAeA8Edj1V1T6yUCPhwMzhv4ElNQ1FFcRusBWHR07SM
 [CheatProxyLite]: https://mega.co.nz/#!3pYykIAS!EFmI7C73rtNOW4UlAGZ9_QzdPVdrCphGQgcy6Q9Rx1w
 [ExtractFolder]: /images/ExtractFolder.png "Extract folder"
 [bp1]: /images/bp1.png "bp"
