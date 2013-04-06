@@ -1,0 +1,53 @@
+---
+layout: post
+title: "Torikai"
+date: 2013-04-06 01:42
+comments: true
+categories: Game
+---
+
+最近很紅的雞寶廚房，
+
+忍不住就改了，
+
+很簡單，
+
+順便po個教學，
+
+主要分兩個Part
+
+1. 修改金錢、擁有的雞寶與個人相關的
+
+2. 修改道具售價、時間長短的
+
+修改的手機是iPhone喔！
+
+這邊都使用Third party工具 iTools 來修改,
+
+在 iTools 中點選手機的程式(使用者)
+
+並找到 torikai 的資料夾，
+
+其中的Document中的兩個檔案
+
+mysaves.archive、time_save_dictionary.plist
+
+這兩個檔案為遊戲存檔資料，
+
+若要Part 1 修改請先「結束程式」、「修改time_save_diction」、「重開雞寶廚房」
+
+---
+
+而在 torikai 下面的 torikai.app 資料夾中
+
+tools_file_0.xml、tools_file_1.xml、tools_file_2.xml、tools_file_3.xml
+
+這四個檔案為道具相關設定，
+
+若要Part2 修改請先「結束程式」、「備份mysaves.archive、time_save_dictionary.plist並移除檔案」、
+
+「修改tools_file_*.xml」、「重開雞寶廚房」、「確定道具修改完成」、「放入備份的存檔檔案」、「重開雞寶廚房」
+
+---
+
+改個錢多多比較好玩！
