@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Game | atdog's Blog]]></title>
   <link href="http://atdog.github.com/blog/categories/game/atom.xml" rel="self"/>
   <link href="http://atdog.github.com/"/>
-  <updated>2013-04-05T18:31:59+08:00</updated>
+  <updated>2013-04-07T06:51:54+08:00</updated>
   <id>http://atdog.github.com/</id>
   <author>
     <name><![CDATA[atdog]]></name>
@@ -12,6 +12,61 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Torikai]]></title>
+    <link href="http://atdog.github.com/blog/2013/04/06/torikai/"/>
+    <updated>2013-04-06T01:42:00+08:00</updated>
+    <id>http://atdog.github.com/blog/2013/04/06/torikai</id>
+    <content type="html"><![CDATA[<p>最近很紅的雞寶廚房，</p>
+
+<p>忍不住就改了，</p>
+
+<p>很簡單，</p>
+
+<p>順便po個教學，</p>
+
+<p>主要分兩個Part</p>
+
+<ol>
+<li><p>修改金錢、擁有的雞寶與個人相關的</p></li>
+<li><p>修改道具售價、時間長短的</p></li>
+</ol>
+
+
+<p>修改的手機是iPhone喔！</p>
+
+<p>這邊都使用Third party工具 iTools 來修改,</p>
+
+<p>在 iTools 中點選手機的程式(使用者)</p>
+
+<p>並找到 torikai 的資料夾，</p>
+
+<p>其中的Document中的兩個檔案</p>
+
+<p>mysaves.archive、time_save_dictionary.plist</p>
+
+<p>這兩個檔案為遊戲存檔資料，</p>
+
+<p>若要Part 1 修改請先「結束程式」、「修改time_save_diction」、「重開雞寶廚房」</p>
+
+<hr />
+
+<p>而在 torikai 下面的 torikai.app 資料夾中</p>
+
+<p>tools_file_0.xml、tools_file_1.xml、tools_file_2.xml、tools_file_3.xml</p>
+
+<p>這四個檔案為道具相關設定，</p>
+
+<p>若要Part2 修改請先「結束程式」、「備份mysaves.archive、time_save_dictionary.plist並移除檔案」、</p>
+
+<p>「修改tools_file_*.xml」、「重開雞寶廚房」、「確定道具修改完成」、「放入備份的存檔檔案」、「重開雞寶廚房」</p>
+
+<hr />
+
+<p>改個錢多多比較好玩！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[TowerOfSaviors]]></title>
