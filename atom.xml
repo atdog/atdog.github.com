@@ -4,7 +4,7 @@
   <title><![CDATA[atdog's Blog]]></title>
   <link href="http://atdog.github.com/atom.xml" rel="self"/>
   <link href="http://atdog.github.com/"/>
-  <updated>2013-04-10T12:20:13+08:00</updated>
+  <updated>2013-04-10T17:15:05+08:00</updated>
   <id>http://atdog.github.com/</id>
   <author>
     <name><![CDATA[atdog]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[audio conversion]]></title>
+    <link href="http://atdog.github.com/blog/2013/04/10/audio-conversion/"/>
+    <updated>2013-04-10T17:12:00+08:00</updated>
+    <id>http://atdog.github.com/blog/2013/04/10/audio-conversion</id>
+    <content type="html"><![CDATA[<ul>
+<li><p>Convert AAC to MP3 format</p>
+
+<pre><code>  ffmpeg -i input.m4a -acodec mp3 -ac 2 -ab 128 output.mp3
+</code></pre></li>
+<li><p>Batch convert</p>
+
+<pre><code>  for i in *.m4a; do
+      ffmpeg -i "$i" -acodec mp3 -ac 2 -ab 128 "${i%m4a}mp3"
+  done
+</code></pre></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Torikai]]></title>

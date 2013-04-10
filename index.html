@@ -10,8 +10,7 @@
   <meta name="author" content="atdog">
 
   
-  <meta name="description" content="最近很紅的雞寶廚房， 忍不住就改了， 很簡單， 順便po個教學， 主要分兩個Part 修改金錢、擁有的雞寶與個人相關的
-修改道具售價、時間長短的 修改的手機是iPhone喔！ 這邊都使用Third party工具 iTools 來修改, 在 iTools 中點選手機的程式(使用者) 並找到 &hellip;">
+  <meta name="description" content="Convert AAC to MP3 format ffmpeg -i input.m4a -acodec mp3 -ac 2 -ab 128 output.mp3 Batch convert for i in *.m4a; do ffmpeg -i "$i" -acodec mp3 -ac 2 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +78,60 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/04/10/audio-conversion/">Audio Conversion</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-10T17:12:00+08:00" pubdate data-updated="true">Apr 10<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/04/10/audio-conversion/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><ul>
+<li><p>Convert AAC to MP3 format</p>
+
+<pre><code>  ffmpeg -i input.m4a -acodec mp3 -ac 2 -ab 128 output.mp3
+</code></pre></li>
+<li><p>Batch convert</p>
+
+<pre><code>  for i in *.m4a; do
+      ffmpeg -i "$i" -acodec mp3 -ac 2 -ab 128 "${i%m4a}mp3"
+  done
+</code></pre></li>
+</ul>
+
+</div>
+  
+  
+
+
+<div style="z-index:999999; position:absolute;">
+    <fb:recommendations-bar action="like" max_age="0" num_recommendations="3" read_time="4" side="right" site="http://blog.atdog.org" trigger="40%"/>
+</div>
+
+    </article>
   
   
     <article>
@@ -561,100 +614,6 @@ addhandler application/x-httpd-php .jpg
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/01/02/di-qi-jie-zi-an-ji-neng-jin-dun-jiang-xin-de-wen/">第七屆資安技能金盾獎-心得文</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-01-02T13:22:00+08:00" pubdate data-updated="true">Jan 2<span>nd</span>, 2013</time>
-        
-         | <a href="/blog/2013/01/02/di-qi-jie-zi-an-ji-neng-jin-dun-jiang-xin-de-wen/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>金盾獎</p>
-
-<p>對於剛加入資安領域的同學應該不陌生吧？</p>
-
-<p>免費的麥當勞吃到飽，</p>
-
-<p><img src="/images/McDownalds.jpg" title="McDownalds" alt="麥當勞山" /></p>
-
-<p>出賽的抽獎獎品，</p>
-
-<p>曾經的燦坤禮卷，</p>
-
-<p>到這屆的Sogo禮卷，</p>
-
-<p>欸，最重要的是不收報名費、還送參加獎！</p>
-
-<p>也很感謝資策會對資訊安全的注重，才能給我們這樣子的舞台。</p>
-
-<hr />
-
-<p>到2012年已經是<a href="http://is.w18.noonspace.tw/">第七屆</a>了，</p>
-
-<p>想想也參加了四屆倒是第一次Po心得文，</p>
-
-<p>從最一開始的戰友 <a href="http://www.plurk.com/Jeffoo">Jeffxx</a>，到今年的戰友 <a href="http://blog.dm4.tw">dm4</a></p>
-
-<p>只能說我的戰友們太給力 XD~</p>
-
-<p>初賽部分就不多說了，大家上網應該都可以找到一些相關的考題內容，</p>
-
-<p>結束前30分鐘排名&#8230;</p>
-
-<p><img src="http://4.bp.blogspot.com/-Z6PAlz1rH6I/UNUwYUhVCoI/AAAAAAAAAWw/uygzrMAG_8c/s1600/R0021755.JPG" alt="rank" /></p>
-
-<hr />
-
-<p>這次的複賽依舊在恆逸資訊教育訓練中心，</p>
-
-<p>五台電腦，一台輸入Key、三台看題目、一台提供對外網路</p>
-
-<p>我們的策略很簡單，因為其中一位隊員出國了，</p>
-
-<p>所以選擇先放棄所有binary的題目，把其他web、android、misc解玩再說，</p>
-
-<p>題目和解題方式我想在網路上很容易可以找到</p>
-
-<p>所以就不多說囉&#8230;</p>
-
-<p>最後的成績 Team 430 - 第三名</p>
-
-<p>第一名不意外是Orange他們</p>
-
-<p>感謝<a href="http://blog.dm4.tw">dm4</a> XD</p>
-</div>
-  
-  
-
-
-<div style="z-index:999999; position:absolute;">
-    <fb:recommendations-bar action="like" max_age="0" num_recommendations="3" read_time="4" side="right" site="http://blog.atdog.org" trigger="40%"/>
-</div>
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -670,6 +629,10 @@ addhandler application/x-httpd-php .jpg
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/04/10/audio-conversion/">audio conversion</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/04/06/torikai/">Torikai</a>
       </li>
     
@@ -683,10 +646,6 @@ addhandler application/x-httpd-php .jpg
     
       <li class="post">
         <a href="/blog/2013/02/27/wix-dot-com/">Wix.com</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/01/02/di-qi-jie-zi-an-ji-neng-jin-dun-jiang-xin-de-wen/">第七屆資安技能金盾獎-心得文</a>
       </li>
     
   </ul>

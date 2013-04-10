@@ -6,11 +6,11 @@
 <!-- <head> -->
 <head xmlns:fb="http://ogp.me/ns/fb#">
   <meta charset="utf-8">
-  <title>sql injection - atdog's Blog</title>
+  <title>audio conversion - atdog's Blog</title>
   <meta name="author" content="atdog">
 
   
-  <meta name="description" content="There is the slide about sql injection that I presented with dm4 at the yahoo office. SQL injection cheatsheet ">
+  <meta name="description" content="Convert AAC to MP3 format ffmpeg -i input.m4a -acodec mp3 -ac 2 -ab 128 output.mp3 Batch convert for i in *.m4a; do ffmpeg -i "$i" -acodec mp3 -ac 2 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://atdog.github.com/blog/2012/12/27/sql-injection/">
+  <link rel="canonical" href="http://atdog.github.com/blog/2013/04/10/audio-conversion/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -81,7 +81,7 @@
   
   <header>
     
-      <h1 class="entry-title">Sql Injection</h1>
+      <h1 class="entry-title">Audio Conversion</h1>
     
     
       <p class="meta">
@@ -97,7 +97,7 @@
   
 
 
-<time datetime="2012-12-27T15:05:00+08:00" pubdate data-updated="true">Dec 27<span>th</span>, 2012</time>
+<time datetime="2013-04-10T17:12:00+08:00" pubdate data-updated="true">Apr 10<span>th</span>, 2013</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -106,9 +106,19 @@
   </header>
 
 
-<div class="entry-content"><p>There is the slide about sql injection that I presented with <a href="http://blog.dm4.tw">dm4</a> at the yahoo office.</p>
+<div class="entry-content"><ul>
+<li><p>Convert AAC to MP3 format</p>
 
-<p><a href="https://www.dropbox.com/s/w1zyzkhofnzqfzh/sql-pure.pdf">SQL injection cheatsheet</a></p>
+<pre><code>  ffmpeg -i input.m4a -acodec mp3 -ac 2 -ab 128 output.mp3
+</code></pre></li>
+<li><p>Batch convert</p>
+
+<pre><code>  for i in *.m4a; do
+      ffmpeg -i "$i" -acodec mp3 -ac 2 -ab 128 "${i%m4a}mp3"
+  done
+</code></pre></li>
+</ul>
+
 </div>
 
 
@@ -135,12 +145,12 @@
   
 
 
-<time datetime="2012-12-27T15:05:00+08:00" pubdate data-updated="true">Dec 27<span>th</span>, 2012</time>
+<time datetime="2013-04-10T17:12:00+08:00" pubdate data-updated="true">Apr 10<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/security/'>Security</a>
+    <a class='category' href='/blog/categories/tools/'>Tools</a>
   
 </span>
 
@@ -149,7 +159,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://atdog.github.com/blog/2012/12/27/sql-injection/" data-via="h4ck47" data-counturl="http://atdog.github.com/blog/2012/12/27/sql-injection/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://atdog.github.com/blog/2013/04/10/audio-conversion/" data-via="h4ck47" data-counturl="http://atdog.github.com/blog/2013/04/10/audio-conversion/" >Tweet</a>
   
   
   
@@ -160,10 +170,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/11/26/android-apps-exploit-poc/" title="Previous Post: Android apps - Exploit poc">&laquo; Android apps - Exploit poc</a>
+        <a class="basic-alignment left" href="/blog/2013/04/06/torikai/" title="Previous Post: Torikai">&laquo; Torikai</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/01/02/di-qi-jie-zi-an-ji-neng-jin-dun-jiang-xin-de-wen/" title="Next Post: 第七屆資安技能金盾獎-心得文">第七屆資安技能金盾獎-心得文 &raquo;</a>
       
     </p>
   </footer>
@@ -246,10 +254,10 @@
       
         
         // var disqus_developer = 1;
-        // var disqus_identifier = 'http://atdog.github.com/blog/2012/12/27/sql-injection/';
-        // var disqus_url = 'http://atdog.github.com/blog/2012/12/27/sql-injection/';
-        var disqus_identifier = 'http://atdog.github.com/blog/2012/12/27/sql-injection/';
-        var disqus_url = 'http://atdog.github.com/blog/2012/12/27/sql-injection/';
+        // var disqus_identifier = 'http://atdog.github.com/blog/2013/04/10/audio-conversion/';
+        // var disqus_url = 'http://atdog.github.com/blog/2013/04/10/audio-conversion/';
+        var disqus_identifier = 'http://atdog.github.com/blog/2013/04/10/audio-conversion/';
+        var disqus_url = 'http://atdog.github.com/blog/2013/04/10/audio-conversion/';
         var disqus_script = 'embed.js';
       
     (function () {
