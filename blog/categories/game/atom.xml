@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Game | atdog's Blog]]></title>
   <link href="http://atdog.github.com/blog/categories/game/atom.xml" rel="self"/>
   <link href="http://atdog.github.com/"/>
-  <updated>2013-04-10T12:15:48+08:00</updated>
+  <updated>2013-04-10T12:18:52+08:00</updated>
   <id>http://atdog.github.com/</id>
   <author>
     <name><![CDATA[atdog]]></name>
@@ -50,8 +50,9 @@
 
 <p>若要Part 1 修改請先</p>
 
-<p>1.「結束程式」
-2.「修改time_save_diction」</p>
+<p>1.「結束程式」</p>
+
+<p>2.「修改time_save_diction」</p>
 
 <pre><code>- 請再文件中搜尋你目前所有的金錢，修改後並儲存
 </code></pre>
