@@ -34,7 +34,12 @@ mysaves.archive、time_save_dictionary.plist
 
 這兩個檔案為遊戲存檔資料，
 
-若要Part 1 修改請先「結束程式」、「修改time_save_diction」、「重開雞寶廚房」
+若要Part 1 修改請先
+
+1.「結束程式」
+2.「修改time_save_diction」
+    - 請再文件中搜尋你目前所有的金錢，修改後並儲存
+3.「重開雞寶廚房」
 
 ---
 
@@ -44,12 +49,23 @@ tools_file_0.xml、tools_file_1.xml、tools_file_2.xml、tools_file_3.xml
 
 這四個檔案為道具相關設定，
 
-若要Part2 修改請先「結束程式」、「備份mysaves.archive、time_save_dictionary.plist並移除檔案」、
+若要Part2 修改請先
 
-「修改tools_file_*.xml」、「重開雞寶廚房」、「確定道具修改完成」、「放入備份的存檔檔案」、「重開雞寶廚房」
+1. 「結束程式」
+2. 「備份mysaves.archive、time_save_dictionary.plist並移除檔案」
+3. 「修改tools_file_*.xml」
+4. 「重開雞寶廚房」
+5. 「確定道具修改完成」
+6. 「放入備份的存檔檔案」
+7. 「重開雞寶廚房」
 
 ---
 
-其實是為了滿足親愛的老婆
+如果有什麼問題的話
 
-:D
+可以留在Comment那邊喔！
+
+![jibao][jibao]
+
+[jibao]: /images/jibao.png "jibao"
+
