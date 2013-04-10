@@ -39,7 +39,7 @@ mysaves.archive、time_save_dictionary.plist
 1.「結束程式」
 
 2.「修改time_save_diction」
-    - 請再文件中搜尋你目前所有的金錢，修改後並儲存
+    - 請在文件中搜尋你目前所有的金錢，修改後並儲存
 
 3.「重開雞寶廚房」
 
