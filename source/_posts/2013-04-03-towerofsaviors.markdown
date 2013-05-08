@@ -6,7 +6,7 @@ comments: true
 categories: Game
 ---
 
-神魔之塔外掛
+神魔之塔外掛 - 更新 for 2.5 version
 
 教學文捏
 
@@ -113,7 +113,7 @@ or
     - Q: 這樣還有什麼好玩的阿？
         - A: 卡組總共有328張，雖然各種神卡都有了，但其實4封之後不再適用神卡無腦輾壓，很吃卡組的配合以及轉珠技術阿，不然其實給你神卡你也過不了五封，官方還是想要你一直死一直買魔法石來復活阿！！這只是提供大家可以更多元的玩遊戲，而不會因為想要的卡抽不到導致卡牌組就玩不下去。
 
-[CheatProxy]: https://mega.co.nz/#!j1RR2TJB!RAeA8Edj1V1T6yUCPhwMzhv4ElNQ1FFcRusBWHR07SM
+[CheatProxy]: https://mega.co.nz/#!H0YjFSzJ!EjClgTunfQova4j7ACmMIktwHrxJ6FR_e-vJKV26dE8
 [CheatProxyLite]: https://mega.co.nz/#!3pYykIAS!EFmI7C73rtNOW4UlAGZ9_QzdPVdrCphGQgcy6Q9Rx1w
 [ExtractFolder]: /images/ExtractFolder.png "Extract folder"
 [bp1]: /images/bp1.png "bp"
