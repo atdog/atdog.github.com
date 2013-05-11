@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[atdog's Blog]]></title>
-  <link href="http://atdog.github.com/atom.xml" rel="self"/>
-  <link href="http://atdog.github.com/"/>
-  <updated>2013-05-08T22:36:48+08:00</updated>
-  <id>http://atdog.github.com/</id>
+  <link href="http://blog.atdog.org/atom.xml" rel="self"/>
+  <link href="http://blog.atdog.org/"/>
+  <updated>2013-05-11T09:03:01+08:00</updated>
+  <id>http://blog.atdog.org/</id>
   <author>
     <name><![CDATA[atdog]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[audio conversion]]></title>
-    <link href="http://atdog.github.com/blog/2013/04/10/audio-conversion/"/>
+    <link href="http://blog.atdog.org/blog/2013/04/10/audio-conversion/"/>
     <updated>2013-04-10T17:12:00+08:00</updated>
-    <id>http://atdog.github.com/blog/2013/04/10/audio-conversion</id>
+    <id>http://blog.atdog.org/blog/2013/04/10/audio-conversion</id>
     <content type="html"><![CDATA[<ul>
 <li><p>Convert AAC to MP3 format</p>
 
@@ -36,9 +36,9 @@
   
   <entry>
     <title type="html"><![CDATA[Torikai]]></title>
-    <link href="http://atdog.github.com/blog/2013/04/06/torikai/"/>
+    <link href="http://blog.atdog.org/blog/2013/04/06/torikai/"/>
     <updated>2013-04-06T01:42:00+08:00</updated>
-    <id>http://atdog.github.com/blog/2013/04/06/torikai</id>
+    <id>http://blog.atdog.org/blog/2013/04/06/torikai</id>
     <content type="html"><![CDATA[<p>最近很紅的雞寶廚房，</p>
 
 <p>忍不住就改了，</p>
@@ -107,15 +107,15 @@
 
 <p>可以留在Comment那邊喔！</p>
 
-<p><img src="http://atdog.github.com/images/jibao.png" title="jibao" alt="jibao" /></p>
+<p><img src="http://blog.atdog.org/images/jibao.png" title="jibao" alt="jibao" /></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[TowerOfSaviors]]></title>
-    <link href="http://atdog.github.com/blog/2013/04/03/towerofsaviors/"/>
+    <link href="http://blog.atdog.org/blog/2013/04/03/towerofsaviors/"/>
     <updated>2013-04-03T14:42:00+08:00</updated>
-    <id>http://atdog.github.com/blog/2013/04/03/towerofsaviors</id>
+    <id>http://blog.atdog.org/blog/2013/04/03/towerofsaviors</id>
     <content type="html"><![CDATA[<p>神魔之塔外掛 - 更新 for 2.5 version</p>
 
 <p>教學文捏</p>
@@ -127,7 +127,7 @@ or
 <a href="https://mega.co.nz/#!D1AWiJDZ!bI9OVGc2MevpKPJEEljS7UyX8943pjvygDAMD27a-1k">CheatProxyLite</a>(僅提供檢視關卡掉落卡片功能)</p>
 
 <p>下載解壓縮之後，將會有如下圖
-<img src="http://atdog.github.com/images/ExtractFolder.png" title="Extract folder" alt="ExtractFolder" /></p>
+<img src="http://blog.atdog.org/images/ExtractFolder.png" title="Extract folder" alt="ExtractFolder" /></p>
 
 <p>請先確定JAVA已正確安裝，.jar 檔並<code>不會</code>被解壓縮</p>
 
@@ -137,68 +137,68 @@ or
 <li><p>執行 burpsuite.jar，並如下設定
  <br>  <br/>
  切換至Proxy選項
- <img src="http://atdog.github.com/images/bp1.png" title="bp" alt="bp1" />
+ <img src="http://blog.atdog.org/images/bp1.png" title="bp" alt="bp1" />
  <br>  <br/>
  設定 &#8220;Intercept is off&#8221;
- <img src="http://atdog.github.com/images/bp2.png" title="bp" alt="bp2" />
+ <img src="http://blog.atdog.org/images/bp2.png" title="bp" alt="bp2" />
  <br>  <br/>
  切換至Options選項
- <img src="http://atdog.github.com/images/bp3.png" title="bp" alt="bp3" />
+ <img src="http://blog.atdog.org/images/bp3.png" title="bp" alt="bp3" />
  <br>  <br/>
  設定 &#8220;Running&#8221; 為勾選
- <img src="http://atdog.github.com/images/bp4.png" title="bp" alt="bp4" />
- <img src="http://atdog.github.com/images/bp5.png" title="bp" alt="bp5" /></p></li>
+ <img src="http://blog.atdog.org/images/bp4.png" title="bp" alt="bp4" />
+ <img src="http://blog.atdog.org/images/bp5.png" title="bp" alt="bp5" /></p></li>
 <li><p>執行 tower.jar
  <br>  <br/>
  點選Start
  <br>  <br/>
- <img src="http://atdog.github.com/images/tw1.png" title="tw" alt="tw1" />
+ <img src="http://blog.atdog.org/images/tw1.png" title="tw" alt="tw1" />
  <br>  <br/>
  記住紅色框框，IP以及local port
  <br>  <br/>
- <img src="http://atdog.github.com/images/tw2.png" title="tw" alt="tw2" /></p></li>
+ <img src="http://blog.atdog.org/images/tw2.png" title="tw" alt="tw2" /></p></li>
 <li><p>設定 HTTP proxy
  <br>
  iPhone
  <br>
  點選設定，Wifi
  <br>
- <img src="http://atdog.github.com/images/ip1.png" title="ip" alt="ip1" />
+ <img src="http://blog.atdog.org/images/ip1.png" title="ip" alt="ip1" />
  <br>
  點選最右邊小箭頭，進行代理伺服器設定
  <br>
- <img src="http://atdog.github.com/images/ip2.png" title="ip" alt="ip2" />
+ <img src="http://blog.atdog.org/images/ip2.png" title="ip" alt="ip2" />
  <br>
  將前面步驟所記錄的IP以及local port填上
  <br>
- <img src="http://atdog.github.com/images/ip3.png" title="ip" alt="ip3" />
+ <img src="http://blog.atdog.org/images/ip3.png" title="ip" alt="ip3" />
  <br>
  Android
  <br>
  點選設定，Wifi
  <br>
- <img src="http://atdog.github.com/images/ss1.png" title="ss" alt="ss1" />
+ <img src="http://blog.atdog.org/images/ss1.png" title="ss" alt="ss1" />
  <br>
  長案已連接的Wifi
  <br>
- <img src="http://atdog.github.com/images/ss2.png" title="ss" alt="ss2" />
+ <img src="http://blog.atdog.org/images/ss2.png" title="ss" alt="ss2" />
  <br>
  點選更改網路設定
  <br>
- <img src="http://atdog.github.com/images/ss3.png" title="ss" alt="ss3" />
+ <img src="http://blog.atdog.org/images/ss3.png" title="ss" alt="ss3" />
  <br>
  勾選顯示進階設定
  <br>
- <img src="http://atdog.github.com/images/ss4.png" title="ss" alt="ss4" />
+ <img src="http://blog.atdog.org/images/ss4.png" title="ss" alt="ss4" />
  <br>
  將代理伺服器調成手動
  將前面步驟所記錄的IP以及local port填上
  <br>
- <img src="http://atdog.github.com/images/ss5.png" title="ss" alt="ss5" />
+ <img src="http://blog.atdog.org/images/ss5.png" title="ss" alt="ss5" />
  <br></p></li>
 <li><p>重啓 神魔之塔
  <br>
- <img src="http://atdog.github.com/images/g1.png" title="g" alt="g1" /></p></li>
+ <img src="http://blog.atdog.org/images/g1.png" title="g" alt="g1" /></p></li>
 <li><p>FAQ</p>
 
 <ul>
@@ -266,9 +266,9 @@ or
   
   <entry>
     <title type="html"><![CDATA[Image exif tool]]></title>
-    <link href="http://atdog.github.com/blog/2013/02/27/image-exif-tool/"/>
+    <link href="http://blog.atdog.org/blog/2013/02/27/image-exif-tool/"/>
     <updated>2013-02-27T15:58:00+08:00</updated>
-    <id>http://atdog.github.com/blog/2013/02/27/image-exif-tool</id>
+    <id>http://blog.atdog.org/blog/2013/02/27/image-exif-tool</id>
     <content type="html"><![CDATA[<p>最近在網路上找Image exif的修改工具 for Mac，</p>
 
 <p>最後找到 <a href="http://www.sno.phy.queensu.ca/~phil/exiftool/">ExifTool</a></p>
@@ -303,12 +303,12 @@ addhandler application/x-httpd-php .jpg
 
 <p>上傳後執行可以看到這樣的畫面</p>
 
-<p><img src="http://atdog.github.com/images/imageup1.png" title="image upload" alt="image upload" /></p>
+<p><img src="http://blog.atdog.org/images/imageup1.png" title="image upload" alt="image upload" /></p>
 
 <br>
 
 
-<p><img src="http://atdog.github.com/images/imageup2.png" title="image upload" alt="image upload" /></p>
+<p><img src="http://blog.atdog.org/images/imageup2.png" title="image upload" alt="image upload" /></p>
 
 <p>其實就是個小後門!</p>
 ]]></content>
@@ -316,12 +316,12 @@ addhandler application/x-httpd-php .jpg
   
   <entry>
     <title type="html"><![CDATA[Wix.com]]></title>
-    <link href="http://atdog.github.com/blog/2013/02/27/wix-dot-com/"/>
+    <link href="http://blog.atdog.org/blog/2013/02/27/wix-dot-com/"/>
     <updated>2013-02-27T12:41:00+08:00</updated>
-    <id>http://atdog.github.com/blog/2013/02/27/wix-dot-com</id>
+    <id>http://blog.atdog.org/blog/2013/02/27/wix-dot-com</id>
     <content type="html"><![CDATA[<p><a href="http://www.wix.com">Wix.com</a> 最近似乎在Facebook竄紅起來，</p>
 
-<p><img src="http://atdog.github.com/images/wixcom.png" title="Wix com" alt="wixcom" /></p>
+<p><img src="http://blog.atdog.org/images/wixcom.png" title="Wix com" alt="wixcom" /></p>
 
 <p>Wix主打提供使用者快速建立web site的功能，</p>
 
@@ -358,7 +358,7 @@ addhandler application/x-httpd-php .jpg
 
 <p>最後如下&#8230;</p>
 
-<p><img src="http://atdog.github.com/images/wix-backdoor.png" title="Wix backdoor" alt="wixbackdoor" /></p>
+<p><img src="http://blog.atdog.org/images/wix-backdoor.png" title="Wix backdoor" alt="wixbackdoor" /></p>
 
 <p>你確定你的Host端(Wix.com)，Security做的足夠嘛？</p>
 
@@ -385,16 +385,16 @@ addhandler application/x-httpd-php .jpg
   
   <entry>
     <title type="html"><![CDATA[第七屆資安技能金盾獎-心得文]]></title>
-    <link href="http://atdog.github.com/blog/2013/01/02/di-qi-jie-zi-an-ji-neng-jin-dun-jiang-xin-de-wen/"/>
+    <link href="http://blog.atdog.org/blog/2013/01/02/di-qi-jie-zi-an-ji-neng-jin-dun-jiang-xin-de-wen/"/>
     <updated>2013-01-02T13:22:00+08:00</updated>
-    <id>http://atdog.github.com/blog/2013/01/02/di-qi-jie-zi-an-ji-neng-jin-dun-jiang-xin-de-wen</id>
+    <id>http://blog.atdog.org/blog/2013/01/02/di-qi-jie-zi-an-ji-neng-jin-dun-jiang-xin-de-wen</id>
     <content type="html"><![CDATA[<p>金盾獎</p>
 
 <p>對於剛加入資安領域的同學應該不陌生吧？</p>
 
 <p>免費的麥當勞吃到飽，</p>
 
-<p><img src="http://atdog.github.com/images/McDownalds.jpg" title="McDownalds" alt="麥當勞山" /></p>
+<p><img src="http://blog.atdog.org/images/McDownalds.jpg" title="McDownalds" alt="麥當勞山" /></p>
 
 <p>出賽的抽獎獎品，</p>
 
@@ -446,9 +446,9 @@ addhandler application/x-httpd-php .jpg
   
   <entry>
     <title type="html"><![CDATA[sql injection]]></title>
-    <link href="http://atdog.github.com/blog/2012/12/27/sql-injection/"/>
+    <link href="http://blog.atdog.org/blog/2012/12/27/sql-injection/"/>
     <updated>2012-12-27T15:05:00+08:00</updated>
-    <id>http://atdog.github.com/blog/2012/12/27/sql-injection</id>
+    <id>http://blog.atdog.org/blog/2012/12/27/sql-injection</id>
     <content type="html"><![CDATA[<p>There is the slide about sql injection that I presented with <a href="http://blog.dm4.tw">dm4</a> at the yahoo office.</p>
 
 <p><a href="https://www.dropbox.com/s/w1zyzkhofnzqfzh/sql-pure.pdf">SQL injection cheatsheet</a></p>
@@ -457,9 +457,9 @@ addhandler application/x-httpd-php .jpg
   
   <entry>
     <title type="html"><![CDATA[Android apps - Exploit poc]]></title>
-    <link href="http://atdog.github.com/blog/2012/11/26/android-apps-exploit-poc/"/>
+    <link href="http://blog.atdog.org/blog/2012/11/26/android-apps-exploit-poc/"/>
     <updated>2012-11-26T02:43:00+08:00</updated>
-    <id>http://atdog.github.com/blog/2012/11/26/android-apps-exploit-poc</id>
+    <id>http://blog.atdog.org/blog/2012/11/26/android-apps-exploit-poc</id>
     <content type="html"><![CDATA[<p>Google play - <a href="https://play.google.com/store/apps/details?id=com.texty.sms">MightyText</a></p>
 
 <p>Exploit - poc</p>
@@ -535,9 +535,9 @@ addhandler application/x-httpd-php .jpg
   
   <entry>
     <title type="html"><![CDATA[The Future]]></title>
-    <link href="http://atdog.github.com/blog/2012/11/04/the-future/"/>
+    <link href="http://blog.atdog.org/blog/2012/11/04/the-future/"/>
     <updated>2012-11-04T10:15:00+08:00</updated>
-    <id>http://atdog.github.com/blog/2012/11/04/the-future</id>
+    <id>http://blog.atdog.org/blog/2012/11/04/the-future</id>
     <content type="html"><![CDATA[<p>只為了賺更多錢，而想出國；</p>
 
 
@@ -598,9 +598,9 @@ addhandler application/x-httpd-php .jpg
   
   <entry>
     <title type="html"><![CDATA[什麼都不一樣了]]></title>
-    <link href="http://atdog.github.com/blog/2012/07/28/everything-gonna-change/"/>
+    <link href="http://blog.atdog.org/blog/2012/07/28/everything-gonna-change/"/>
     <updated>2012-07-28T01:15:00+08:00</updated>
-    <id>http://atdog.github.com/blog/2012/07/28/everything-gonna-change</id>
+    <id>http://blog.atdog.org/blog/2012/07/28/everything-gonna-change</id>
     <content type="html"><![CDATA[<p>我是說</p>
 
 <p>認識<a href="http://blog.dm4.tw">dm4</a>之後</p>

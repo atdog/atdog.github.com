@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Life | atdog's Blog]]></title>
-  <link href="http://atdog.github.com/blog/categories/life/atom.xml" rel="self"/>
-  <link href="http://atdog.github.com/"/>
-  <updated>2013-05-08T22:36:48+08:00</updated>
-  <id>http://atdog.github.com/</id>
+  <link href="http://blog.atdog.org/blog/categories/life/atom.xml" rel="self"/>
+  <link href="http://blog.atdog.org/"/>
+  <updated>2013-05-11T09:03:01+08:00</updated>
+  <id>http://blog.atdog.org/</id>
   <author>
     <name><![CDATA[atdog]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[The Future]]></title>
-    <link href="http://atdog.github.com/blog/2012/11/04/the-future/"/>
+    <link href="http://blog.atdog.org/blog/2012/11/04/the-future/"/>
     <updated>2012-11-04T10:15:00+08:00</updated>
-    <id>http://atdog.github.com/blog/2012/11/04/the-future</id>
+    <id>http://blog.atdog.org/blog/2012/11/04/the-future</id>
     <content type="html"><![CDATA[<p>只為了賺更多錢，而想出國；</p>
 
 
@@ -78,9 +78,9 @@
   
   <entry>
     <title type="html"><![CDATA[什麼都不一樣了]]></title>
-    <link href="http://atdog.github.com/blog/2012/07/28/everything-gonna-change/"/>
+    <link href="http://blog.atdog.org/blog/2012/07/28/everything-gonna-change/"/>
     <updated>2012-07-28T01:15:00+08:00</updated>
-    <id>http://atdog.github.com/blog/2012/07/28/everything-gonna-change</id>
+    <id>http://blog.atdog.org/blog/2012/07/28/everything-gonna-change</id>
     <content type="html"><![CDATA[<p>我是說</p>
 
 <p>認識<a href="http://blog.dm4.tw">dm4</a>之後</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Game | atdog's Blog]]></title>
-  <link href="http://atdog.github.com/blog/categories/game/atom.xml" rel="self"/>
-  <link href="http://atdog.github.com/"/>
-  <updated>2013-05-08T22:36:48+08:00</updated>
-  <id>http://atdog.github.com/</id>
+  <link href="http://blog.atdog.org/blog/categories/game/atom.xml" rel="self"/>
+  <link href="http://blog.atdog.org/"/>
+  <updated>2013-05-11T09:03:01+08:00</updated>
+  <id>http://blog.atdog.org/</id>
   <author>
     <name><![CDATA[atdog]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Torikai]]></title>
-    <link href="http://atdog.github.com/blog/2013/04/06/torikai/"/>
+    <link href="http://blog.atdog.org/blog/2013/04/06/torikai/"/>
     <updated>2013-04-06T01:42:00+08:00</updated>
-    <id>http://atdog.github.com/blog/2013/04/06/torikai</id>
+    <id>http://blog.atdog.org/blog/2013/04/06/torikai</id>
     <content type="html"><![CDATA[<p>最近很紅的雞寶廚房，</p>
 
 <p>忍不住就改了，</p>
@@ -92,9 +92,9 @@
   
   <entry>
     <title type="html"><![CDATA[TowerOfSaviors]]></title>
-    <link href="http://atdog.github.com/blog/2013/04/03/towerofsaviors/"/>
+    <link href="http://blog.atdog.org/blog/2013/04/03/towerofsaviors/"/>
     <updated>2013-04-03T14:42:00+08:00</updated>
-    <id>http://atdog.github.com/blog/2013/04/03/towerofsaviors</id>
+    <id>http://blog.atdog.org/blog/2013/04/03/towerofsaviors</id>
     <content type="html"><![CDATA[<p>神魔之塔外掛 - 更新 for 2.5 version</p>
 
 <p>教學文捏</p>

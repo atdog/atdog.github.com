@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Tools | atdog's Blog]]></title>
-  <link href="http://atdog.github.com/blog/categories/tools/atom.xml" rel="self"/>
-  <link href="http://atdog.github.com/"/>
-  <updated>2013-05-08T22:36:48+08:00</updated>
-  <id>http://atdog.github.com/</id>
+  <link href="http://blog.atdog.org/blog/categories/tools/atom.xml" rel="self"/>
+  <link href="http://blog.atdog.org/"/>
+  <updated>2013-05-11T09:03:01+08:00</updated>
+  <id>http://blog.atdog.org/</id>
   <author>
     <name><![CDATA[atdog]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[audio conversion]]></title>
-    <link href="http://atdog.github.com/blog/2013/04/10/audio-conversion/"/>
+    <link href="http://blog.atdog.org/blog/2013/04/10/audio-conversion/"/>
     <updated>2013-04-10T17:12:00+08:00</updated>
-    <id>http://atdog.github.com/blog/2013/04/10/audio-conversion</id>
+    <id>http://blog.atdog.org/blog/2013/04/10/audio-conversion</id>
     <content type="html"><![CDATA[<ul>
 <li><p>Convert AAC to MP3 format</p>
 

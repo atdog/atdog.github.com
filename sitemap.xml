@@ -1,57 +1,57 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://atdog.github.com/blog/2012/07/28/everything-gonna-change/</loc>
+        <loc>http://blog.atdog.org/blog/2012/07/28/everything-gonna-change/</loc>
         <lastmod>2013-04-04T14:59:47+08:00</lastmod>
     </url>
     <url>
-        <loc>http://atdog.github.com/blog/2012/11/04/the-future/</loc>
+        <loc>http://blog.atdog.org/blog/2012/11/04/the-future/</loc>
         <lastmod>2013-02-27T11:17:02+08:00</lastmod>
     </url>
     <url>
-        <loc>http://atdog.github.com/blog/2012/11/26/android-apps-exploit-poc/</loc>
+        <loc>http://blog.atdog.org/blog/2012/11/26/android-apps-exploit-poc/</loc>
         <lastmod>2013-04-14T22:35:43+08:00</lastmod>
     </url>
     <url>
-        <loc>http://atdog.github.com/blog/2012/12/27/sql-injection/</loc>
+        <loc>http://blog.atdog.org/blog/2012/12/27/sql-injection/</loc>
         <lastmod>2013-02-27T15:10:07+08:00</lastmod>
     </url>
     <url>
         <loc>
-            http://atdog.github.com/blog/2013/01/02/di-qi-jie-zi-an-ji-neng-jin-dun-jiang-xin-de-wen/
+            http://blog.atdog.org/blog/2013/01/02/di-qi-jie-zi-an-ji-neng-jin-dun-jiang-xin-de-wen/
         </loc>
         <lastmod>2013-02-27T11:17:02+08:00</lastmod>
     </url>
     <url>
-        <loc>http://atdog.github.com/blog/2013/02/27/wix-dot-com/</loc>
+        <loc>http://blog.atdog.org/blog/2013/02/27/wix-dot-com/</loc>
         <lastmod>2013-02-27T15:53:33+08:00</lastmod>
     </url>
     <url>
-        <loc>http://atdog.github.com/blog/2013/02/27/image-exif-tool/</loc>
+        <loc>http://blog.atdog.org/blog/2013/02/27/image-exif-tool/</loc>
         <lastmod>2013-03-01T14:04:35+08:00</lastmod>
     </url>
     <url>
-        <loc>http://atdog.github.com/blog/2013/04/03/towerofsaviors/</loc>
+        <loc>http://blog.atdog.org/blog/2013/04/03/towerofsaviors/</loc>
         <lastmod>2013-05-08T22:36:21+08:00</lastmod>
     </url>
     <url>
-        <loc>http://atdog.github.com/blog/2013/04/06/torikai/</loc>
+        <loc>http://blog.atdog.org/blog/2013/04/06/torikai/</loc>
         <lastmod>2013-04-10T12:19:43+08:00</lastmod>
     </url>
     <url>
-        <loc>http://atdog.github.com/blog/2013/04/10/audio-conversion/</loc>
+        <loc>http://blog.atdog.org/blog/2013/04/10/audio-conversion/</loc>
         <lastmod>2013-04-10T17:14:56+08:00</lastmod>
     </url>
     <url>
-        <loc>http://atdog.github.com/blog/archives/</loc>
+        <loc>http://blog.atdog.org/blog/archives/</loc>
         <lastmod>2013-05-08T22:36:21+08:00</lastmod>
     </url>
     <url>
-        <loc>http://atdog.github.com/</loc>
+        <loc>http://blog.atdog.org/</loc>
         <lastmod>2013-05-08T22:36:21+08:00</lastmod>
     </url>
     <url>
-        <loc>http://atdog.github.com/resume/</loc>
+        <loc>http://blog.atdog.org/resume/</loc>
         <lastmod>2013-04-05T13:08:03+08:00</lastmod>
     </url>
 </urlset>
